@@ -1,0 +1,68 @@
+#availablecarscontainer {
+    width: 96%;
+    margin: auto;
+    height: 800px;
+  
+    border: 1px solid red;
+  }
+  #availablecarsleftbox {
+    width: 25%;
+    height: 100%;
+    margin-top: 90px;
+    padding-left: 5px;
+    border: 1px solid red;
+  }
+  /**filtername style*/
+  #filter {
+    height: 25px;
+    text-align: left;
+    margin-top: 100px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #868686;
+    margin-top: 5%;
+    margin-left: 10px;
+  }
+  #citytext {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #868686;
+    margin-left: 5px;
+  }
+  
+  /**filter box**/
+  #filterbox {
+    width: 90%;
+    height: 60px;
+    margin: 0 6% 0 0;
+    border: none;
+    outline: none;
+    color: #868686;
+    font-weight: 700;
+  }
+  #serchtxt {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(27, 28, 36, 0.8);
+  
+    margin-top: 30px;
+  }
+  #searchbox {
+    box-sizing: border-box;
+    height: 30px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .searchicon {
+    padding: 8px 8px 10px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid red;
+  }
+  

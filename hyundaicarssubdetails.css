@@ -1,0 +1,312 @@
+/*hyundai subscrption page main box*/
+
+#avail_carsbox {
+    height: 800px;
+    width: 98%;
+    display: flex;
+    background-size: cover;
+    border: 1px solid red;
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/24/16/44/hyundai-4964667__340.jpg);
+  }
+  
+  /*leftside box*/
+  
+  #subbox {
+    height: 70%;
+    width: 50%;
+    margin-top: 6%;
+    margin-left: 5%;
+    background-color: white;
+    border: 1px solid red;
+  }
+  #subbox2 {
+    height: 40%;
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+  }
+  /*img of hundai subsption */
+  img {
+    vertical-align: middle;
+    width: 55%;
+    height: 5%;
+  }
+  
+  /*filter box top side*/
+  
+  .hyundsub1 {
+    margin-top: 5%;
+    height: 20px;
+  }
+  .poweredby {
+    color: #000;
+    font-size: 14px;
+    margin-top: 3%;
+  }
+  .headh2 {
+    letter-spacing: normal;
+    text-align: center;
+    color: #5a5254;
+    font-size: 25px;
+  }
+  #placelog {
+    height: 100px;
+    width: 90%;
+    margin-left: 5%;
+    border: 1px solid red;
+    margin-top: 20px;
+    display: flex;
+  }
+  /*filterbox ofselect city*/
+  #select_city {
+    height: 100px;
+    width: 100%;
+    margin-left: 1%;
+    border: 1px solid red;
+  }
+  /*fonticon */
+  #placelog > i {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  /*filter box styling*/
+  #filter {
+    margin: 0 6% 0 0;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+  }
+  /* cars price boxes*/
+  #carspricesmallbox{
+    width: 90%;
+    height: 120px;
+    margin:5% 0 0 5%;
+    display: flex;
+    
+  }
+  /*cars price rightbox*/
+  #brandcarsbox{
+    width: 45%;
+    height: 100%;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: #fff;
+  }
+  /* unboxedcars boxis right box all styling is same as left box*/
+  #unboxedcarbox{
+    width: 45%;
+    height: 100%;
+  margin-left: 10%;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: #fff;
+  }
+  /*brand box top side same rightbox*/
+  #brandcarsbox1{
+    background-color: #1caba2;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  
+  
+  /*left box content styling*/
+  a{
+    text-decoration: none;
+  }
+  .al{
+    color: white;
+    font-size: 18px;
+      font-family: "Poppins";
+      font-weight:700;
+      margin-top: 10px;
+      cursor: pointer;
+  }
+  /*arrow logo*/
+  #arrlogo{
+    width: 20px;
+    height: 12px;
+    margin-top: 15px;
+  margin-left: 20px;
+  }
+  /*brandcarsbox line2 text styling*/
+  #brandcarsbox1>p{
+    margin-top:-20px;
+    padding-left:5px;
+    background-color: #1caba2;
+    font-family: Poppins;
+      font-weight: 400;
+      font-size: 16px;
+      width: 100%;
+      height: 25px;
+      text-align: left;
+      color: #fff;
+  }
+  /*price showing line*/
+  .priceline{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    color: #3d3e4a;
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+  .pricelinespn{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /*right side text box */
+  #rightsidetext{
+    height: 100px;
+    width: 400px;
+    margin:500px 0 0 30px;
+    border: 1px solid red;
+  }
+  
+  /*right box in main box text*/
+  .h3{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  .h1{
+    font-family: Poppins;
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+      text-align: left;
+      cursor: pointer;
+      display: block;
+  }
+  /*exploretag*/
+  .expltag{
+    font-family: Poppins;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      color: #1caba2;
+      text-align: left;
+      margin-top:80px ;
+      margin-left: 5px;
+  }
+  /*subcrption benfits main box*/
+  #subscrptn-ben-mainbox{
+    min-height: 450px;
+    width: 70%;
+    margin-top: -6%;
+    margin-left: 5%;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: #fff;
+    padding: 5% 5%!important;
+    display: block;
+    border: 1px solid red;
+  }
+  .row{
+    flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+  }
+  .col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  /*lists of befits*/
+  
+  ul{
+    display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding-left: 0;
+      justify-content: space-between;
+  }
+  li{
+    display: flex;
+      align-items: center;
+  }
+  li>img{
+    width: 65px;
+    height: 70px;
+    vertical-align: middle;
+  }
+  /* styling text in benifits lists*/
+  
+  .benifits-list{
+    
+    min-width: 115px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: #000;
+    margin-left: 11px;
+  }
+  /* what is subscription box*/
+  #what-is-sub{
+    margin-top: 6%;
+    width: 100%;
+    display: flex;
+    height: 220px;
+    border: 1px solid red;
+  }
+  #what-is-sub-left{
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+  }
+  
+  #what-is-sub-left h2{
+  font-family: Poppins;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: left;
+      color: #888993;
+      margin:5px 0 0 10px;
+  }
+  #what-is-sub-left span{
+    font-family: Poppins;
+      font-size: 28px;
+      font-weight: 700;
+      color: #1b1c24;
+      margin-left: 10px;
+  }
+  /*what is sub text*/
+  
+  #what-is-sub-left p{
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  color: #5d5e6f;
+  margin-top: 17px;
+  padding-right: 58px;
+  }
+  #what-is-sub-left a{
+    border-radius: 4px;
+    border: 2px solid #ebebeb;
+    background-color: #fff;
+    font-family: Poppins;
+    padding: 13px 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #1caba2;
+    width: 135px;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+   #what-is-sub-right{
+    width: 50%;
+    border: 1px solid red;
+  
+  }

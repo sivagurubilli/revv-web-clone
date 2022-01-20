@@ -1,0 +1,102 @@
+/* nav container*/
+#nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    border: 1px solid red;
+    background-color: #ffffff;
+    margin-top: -10px;
+  }
+  #left {
+    display: flex;
+    width: 40%;
+    border: 1px solid red;
+    margin-left: 5%;
+    cursor: pointer;
+  }
+  /*revvlogo style*/
+  #navimg {
+    vertical-align: middle;
+    margin-top: 5px;
+    height: 50px;
+    border: 1px solid red;
+    width: 80px;
+  }
+  /*navbar hyundai subsrptn img*/
+  .hyundimg {
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+    height: 20px;
+  }
+  
+  #left > .hyund {
+    margin-left: 10px;
+    display: flex;
+    color: #1a1a1a;
+  }
+  /*vertical line*/
+  
+  #vline {
+    width: 2px;
+    height: 40px;
+    background-color: grey;
+    margin-left: 27px;
+    margin-top: 8px;
+  }
+  
+  .san_safe {
+    margin-top: 40px;
+    margin-left: -30px;
+  }
+  
+  /*rightside*/
+  #right {
+    display: flex;
+    border: 1px solid red;
+    margin-right: 30px;
+    width: 30%;
+  }
+  /*hovering*/
+  #navh3:hover,
+  #navlh3:hover,
+  #smalllogo:hover {
+    color: #1caba2;
+  }
+  /*navbar rigtht text*/
+  #navh3 {
+    text-decoration: none;
+    color: #3c4043;
+    margin: 18px 20px 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  #navlh3 {
+    margin-right: 10px;
+    margin-top: 18px;
+    color: #3c4043;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  /*small logo signup*/
+  #smallogo {
+    margin-right: 10px;
+    margin-top: 18px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  /* above part navbarstyling*/
+
+  
