@@ -230,6 +230,7 @@
       padding-left: 0;
       justify-content: space-between;
   }
+  /*this is make as lists*/
   li{
     display: flex;
       align-items: center;
