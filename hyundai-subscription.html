@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyundai subscription</title>
+    <script src="https://kit.fontawesome.com/b62226de3e.js" crossorigin="anonymous"></script>
+<style>
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+border: 1px solid red;
+margin-top: -10px;
+ background-color:#FFFFFF;
+    }
+    #left{
+        display: flex;
+        width:40%;
+        border: 1px solid red;
+        margin-left:5%;
+       cursor: pointer;
+    }
+    #navimg{
+        vertical-align: middle;
+        margin-top: 5px;
+        height: 50px;
+    
+        border: 1px solid red;
+        width: 80px;
+    }
+    /*navlogo style*/
+    #right{
+        display:flex;
+        border: 1px solid red;
+        margin-right: 30px;
+        width: 30%;
+
+       
+       
+    }
+   #left>.hyund{
+           margin-left: 10px;
+           display: flex;
+           color: #1A1A1A;
+   }
+   #vline{
+       width: 2px;
+       height: 40px;
+       background-color: grey;
+       margin-left: 27px;
+       margin-top: 8px;
+   }
+   /*vertical line*/
+  
+   .san_safe{
+       margin-top:40px;
+       margin-left: -30px;
+   }
+   /*nav hyund sub img*/
+   .hyundimg{
+       margin-left: 5%;
+       margin-top: 20px;
+    width: 85%;
+    height: 20px;
+
+   }
+   #navh3:hover,#navlh3:hover,#smalllogo:hover{
+       color:#1caba2
+   }
+   /*navbar rigtht text*/
+   #navh3{
+    text-decoration: none;
+       color: #3C4043;
+       margin: 18px 20px 0;
+       text-align: left;
+       cursor: pointer;
+       font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+       
+   }
+   
+   #navlh3{
+       margin-right: 10px;
+       margin-top: 18px;
+       color: #3C4043;
+       text-decoration: none;
+       font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+       cursor: pointer;
+   }
+   /*small logo signup*/
+   #smalllogo{
+       margin-right: 10px;
+       margin-top: -1px;
+      cursor: pointer;
+       width: 20px;
+   }
+   
+  /* above part navbarstyling*/
+
+   
+   /*hyundai subscrption page main box*/
+   #subbackbox{
+       display: flex;
+       height: 600px;
+       width: 100%;
+       background-image: url(https://cdn.pixabay.com/photo/2020/04/09/19/08/auto-5022764__340.jpg);
+       border: 1px solid red;
+       background-repeat: no-repeat;
+   background-size: cover;
+   
+    }
+
+
+   #subbox{
+       height: 80%;
+       width: 50%;
+       margin-top: 8%;
+       margin-left: 5%;
+       background-color: white;
+       border: 1px solid red;
+   }
+   
+   /*main box top part*/
+   #subbox2{
+       height: 40%;
+       width: 100%;
+       border: 1px solid red;
+       text-align: center;
+   }
+
+   #subbox2>img{
+       vertical-align: middle;
+       width: 330px;
+       height: 20px;
+       margin-top: 30px;
+   } 
+   .poweredby{
+       color: #000;
+       font-size: 14px;
+       margin-top: 20px;
+   }
+   #subbox>h2{
+    letter-spacing: normal;
+    text-align: center;
+    color: #5a5254;
+    font-size: 18px;
+   }
+
+
+/**filter box**/
+#filter{
+    width: 80%;
+    height: 60px;
+    margin: 0 6% 0 6%;
+    border:none;
+    outline: none;
+    font-weight: 700;
+}
+.headh2{
+    color: #5a5254;
+font-size: 18px;
+font-weight: 400;
+margin-top: 30px;
+}
+/*date box styling*/
+#date{
+    width: 95%;
+    height: 50px;
+margin-top: 0px;
+    border:none;
+    outline: none;
+    font-weight: 700;
+
+}
+#ptag{
+    margin:5px 0 0 7%;
+    font-size: 10px;
+    color: #7D7D7D ;
+}
+/**hr lines below select boxes*/
+hr{
+    opacity: 100%;
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 1px;
+}
+   #hr1{
+       opacity: 100%;
+       width: 100%;
+    margin-left: 1px;
+       margin-top: 1px;
+   }
+   #datebox,#durbx{
+       width: 45%;
+       height: 80px;
+       border: 1px solid red;
+       margin-left: 5%;
+       margin-top: 5%;
+   }
+   #dates{
+       display: flex;
+   }
+   #ptag1{
+       font-size: 10px;
+      color: #7D7D7D;
+   }
+
+   /*button in searching hyundai cars box*/
+   #btn{
+    background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171));
+    border-radius: 4px;
+    width: 30%;
+    border: none;
+    max-height: 45px;
+    margin-top: 4%;
+margin-left: 33%;
+color: white;
+    text-align: left;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+   }
+#btn>img{
+    margin-top: -40px;
+    margin-left: 100px;
+}
+
+/*left box take delivery by year*/
+
+   #take_hyundai_by_year{
+       height: 100px;
+       width: 35%;
+       background-color:#F6F6F6;
+       border-radius: 5px;
+       margin-top:8%;
+       margin-left: 5%;
+       border: 1px solid red;
+   }
+   /*take hundai by year box*/
+
+   #take_hyundai_by_year1{
+   color: #000;;
+font-size: 16px;
+font-weight: 400;
+padding: 12px 0 0 24px;
+   }
+   .take_hyundai_by_year2{
+       font-size: 20px;
+       font-weight: 700px;
+       text-align: left;
+       margin-top: 0px;
+       
+   }
+   /*explore link stylin*/
+   .take_hyundai_by_year3>a{
+   font-size: 20px;
+    color: #1caba2;
+    padding-left: 12px;
+    font-weight: 700px;
+       text-align: left;
+       text-decoration: none;
+       height: 30px;
+       margin-top: 10px;
+
+}
+/*explore link stylin*/
+
+.spn{
+    width: 15px;
+    height: 15px;
+    margin-top: 1px;
+}
+#span{
+    display: flex;
+    width: 300px;
+}
+
+/*above is compleated firstbox*/
+
+#howitworkbox{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+/*how it works main box*/
+
+#howitwork_hding{
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(27, 28, 36);
+    text-align: left;
+}
+#howitworkbxs{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    border: 1px solid red;
+    height: 250px;
+}
+/*how it work box*/
+.hrdasedline{
+    position: absolute;
+    border-top: 2px dotted;
+    color: #000;
+    margin: 80px 80px 0 100px;
+    width: 65%;
+    display:  block!important;
+    overflow: visible;
+}
+/*hrdotted line*/
+
+.howitworkiconbox1{
+    width: 23%;
+height: 100%;
+border:  1px solid red;
+
+}
+.circlebox{
+    border: 8px solid #ddd;
+    content: "\f09d";
+    height: 120px;
+    width: 120px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(255, 255, 255);
+    display: block;
+    box-shadow: rgb(0 0 0 / 25%) 0px 14px 45px, rgb(0 0 0 / 22%) 0px 10px 18px;
+    border-radius: 50%;
+    margin: 10px 0 0 10px;
+
+}
+/*circle box of icons in how it works page*/
+
+.circlebox>i{
+    padding-top: 25px;
+}
+/*icons*/
+
+.howitworkiconbox1>h3{
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 500px;
+    
+}
+.howitworkiconbox1>p{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 15px;
+     line-height: 1.5;
+    color: #212529;
+}
+/* styling of how it work box compleated*/
+
+   </style>
+</head>
+<body>
+<!--navbar-->
+    <div id = "nav">
+        <!--nav left side-->
+    <div id ="left">
+        <div ><img id ="navimg" src ="https://www.revv.co.in/grapheneImages/newopen/logo.svg">
+       </div>
+       <p class="san_safe">Sanitised.safe</p>
+       <div id ="vline">
+       </div>
+        <div><img class ="hyundimg" src ="https://www.revv.co.in/grapheneImages/hyundai/hyundai-logo-sub@2x.png">
+    </div>
+    </div>
+    <!--right part of navbar-->
+    <div id ="right">
+        <a id ="navh3" href="howitworks.html">How it works</a>
+           <a id ="navh3" href="faqs.html">FAQS</a>
+        
+            <img id ="smalllogo" src ="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg">
+           <a id ="navlh3" href= "logsup.html">Login or Signup</a>
+    
+    </div>
+</div>
+
+
+    <!--heading in main box-->
+<div id ="subbackbox">
+    <div id ="subbox">
+
+        <div id ="subbox2">
+            <img class ="hyundsub1" src ="https://www.revv.co.in/grapheneImages/newopen/logo_hyundai_sub_web@3x.png">
+    <div class ="poweredby">Powered by Revv</div>
+    <h2 class ="headh2">Hyundai Car Subscription in India</h2>
+    </div>
+
+
+    <p id ="ptag">CITY</p>
+
+    <!--select city filter box-->
+    
+    <div> <select id = "filter" onchange ="Selectcity()">
+ <option value ="">Select City</option>
+ <option value ="mumb">Mumbai</option>
+ <option value = "bang">Bangalore</otion>
+<option value="chen">chennai</option>
+<option value="hyd">Hyderabad</option>
+<option value="delhi">Delhi</option>
+<option value=kolk"">Kolkata</option>
+</select>
+<hr>
+</div>
+
+
+<div id ="dates">
+   
+<div id ="datebox">
+    <p id ="ptag1"> START DATE</p>
+
+<input id = "date" type ="date" placeholder="Start date"></input>
+<hr id ="hr1">
+</div>
+
+
+
+<div id ="durbx">
+    <p id ="ptag1"> DURATION</p>
+    <h4>1,3or 6 months</h4>
+    <hr id ="hr1">
+</div>  
+</div>
+<!--dates boxes -->
+<div>
+<button id ="btn" onclick="window.location.href ='allavailablecars.html'">
+    Search<img src =https://www.revv.co.in/assets/RentalImages/HomeScreen/searchButtonArrow.svg>
+</button>
+</div>
+<!--search button-->
+</div>
+<div id ="take_hyundai_by_year" style="display:flex;cursor:pointer;">
+    <div id ="take_hyundai_by_year1"><p>Loking For Hyundai Subscription</p>
+        <div id="span">
+    <p class="take_hyundai_by_year2">By The Year</p>
+    <div class="take_hyundai_by_year3">
+    <a href ="hyundaicarssubdetails.html">Explore
+        <img class ="spn"src ="https://www.revv.co.in/assets/RentalImages/HomeScreen/open-xplore.svg">
+    </a>
+</div>
+</div>
+    </div>
+</div>
+
+<!--left box --take delivery by year-->
+
+
+</div>
+
+<div id = "howitworkbox">
+    <div id ="howitwork_hding">How it Works</div>
+   
+    <div id ="howitworkbxs">
+        <hr class ="hrdasedline">
+        <div class="howitworkiconbox1">
+<div class="circlebox">
+    <i class="fas fa-digital-tachograph fa-4x"></i>
+</div>
+<h3>Book & Pay</h3>
+<p>pick your favourite color,time and place</p>
+        </div>
+
+        <!--first box of how it works-->
+
+
+        <div class="howitworkiconbox1">
+            <div class="circlebox">
+                <i class="fas fa-car fa-4x"></i>
+            </div>      
+         <h3>Recieve</h3>
+            <p>Recieve car at your door step</p>
+                    </div>
+                    <!--second box of how it works-->
+                    <div class="howitworkiconbox1">
+                        <div class="circlebox">
+                            <i class="fas fa-universal-access fa-4x"></i>
+                        </div>      
+                     <h3>Drive</h3>
+                        <p>Enjoy your revv self drive</p>
+                                </div>
+                                <!--third box of how it works-->
+                                <div class="howitworkiconbox1">
+                                    <div class="circlebox">
+                                        <i class="fas fa-undo-alt fa-4x"></i>
+                                    </div>      
+                                 <h3>Return</h3>
+                                    <p>Get the car back to preffered preffered location and ww will take it from there</p>
+                                            </div>
+                                            <!--fourth box of how it works--> </div>
+</div>
+<!--how it works divisin complte-->
+
+
+</body>
+
+</html>
