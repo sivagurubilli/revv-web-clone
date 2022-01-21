@@ -365,6 +365,109 @@ border:  1px solid red;
 }
 /* styling of how it work box compleated*/
 
+
+/*sanitised &safe box*/
+.san{
+    /* border: 1px solid green; */
+    border-radius: 18px;
+    min-width:385px;
+    height: 230px;
+    position: relative;;
+    padding: 0 5px;
+    margin:10px 20px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 30px;
+}
+
+.imgs{
+    height: 230px;
+    min-width:185px;
+    border-radius: 18px;
+    
+}
+main{
+            width: 100%;
+            height: 300px;
+           margin:auto;
+            overflow: hidden;
+            margin-top: 100px;
+}
+section{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 300px;
+    margin:10px auto;
+    display:flex;
+    justify-content: left;
+    overflow-x:auto;
+}
+spam{
+    /* border: 1px solid blue; */
+position:absolute;
+top:10%;
+left:76%;
+z-index:1;
+margin-left: 200px;
+width:10px;
+text-align:right;
+padding-left: 35px;
+font-size: 50px;
+
+}
+spam:nth-child(1){
+    margin-left:500px;
+    left: 80%;
+    
+}
+spam:nth-child(2){
+    left: 72%;
+}
+.imgt{
+    width:530px ;
+    height: 220px;
+    border-radius: 18px;
+    margin-left: -90px;
+}
+
+/*whyrev sliding box style*/
+.imgwr{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    margin-top:55px
+    
+
+}
+.textwr{
+margin-top:-100px;
+margin-left: 90px;
+background-color: white;
+font-size: 30px;
+margin-bottom: -5px;
+}
+.pwr{
+margin-top:10px;
+margin-left: 90px;
+background-color: white;
+ color:rgb(133, 136, 143);
+ font-size: 20px;
+
+}
+
+.divwr{
+       /* border: 1px solid green; */
+    border-radius: 18px;
+    min-width: 525px;
+    height: 170px;
+    position: relative;;
+    padding: 0 1px;
+    margin:10px 20px;
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
    </style>
 </head>
 <body>
@@ -462,6 +565,74 @@ border:  1px solid red;
 
 
 </div>
+<main >
+
+    <h1>Why Revv Hyundai Subscription?</h1>
+   
+    <spam>&#139;</spam>
+    <spam>&#155;</spam>
+  
+ <section>
+      
+        <div  class="divwr">
+            <img  class="imgwr"src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/home.png">
+            <h2  class="textwr">Home delivery & return</h2>
+            <p class="pwr">On-time doorstep service, at your preferred location and time</p>
+          
+        </div>
+        <div  class="divwr">
+            <img class="imgwr" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/price.png">
+            <h2  class="textwr">Flexible pricing plans</h2>
+            <p class="pwr">choose "unlimited kms' or 'with fule' plans</p>
+          
+        </div>
+        <div class="divwr">
+            <img class="imgwr" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/maintained.png">
+            <h2 class="textwr">Well maintained cars</h2>
+            <p class="pwr">Regular service & mainteance; inspected before each trip</p>
+        </div>
+        <div class="divwr">
+            <img class="imgwr" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/contact.png">
+            <h2  class="textwr">Flexible pricing plans</h2>
+            <p class="pwr">choose "unlimited kms' or 'with fule' plans</p>
+        </div>
+
+        </section>
+    </main>
+
+
+
+<!--sanitised &safe-->
+<main >
+
+    <h1>Sanitized & safe cars</h1>
+   
+    <spam>&#139;</spam>
+    <spam>&#155;</spam>
+  
+ <section>
+      
+        <div class="san">
+            <img  class="imgs" src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/thumbnails/Group+84.png">
+        </div>
+        <div class="san">
+            <img  class="imgs" src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_01-min.jpg">
+        </div>
+        <div class="san">
+            <img  class="imgs" src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_02-min.jpg">
+        </div>
+        <div class="san">
+            <img class="imgs" src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_03-min.jpg">
+        </div>
+        <div class="san">
+            <img class="imgs" src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_04-min.jpg">
+        </div>
+        </section>
+
+</main>
+
+<hr>
+
 
 <div id = "howitworkbox">
     <div id ="howitwork_hding">How it Works</div>
@@ -507,6 +678,38 @@ border:  1px solid red;
 <!--how it works divisin complte-->
 <!--half part-->
 
+<hr>
+
 </body>
 
 </html>
+<script>
+    var span = document.getElementsByTagName('spam');
+    var div = document.getElementsByTagName('div');
+    var l=0;
+    span[1].onclick = ()=>{
+    l++;
+    for(var i of div)
+    {
+       if(l==0){i.style.left = "0px";}
+       if(l==1){i.style.left = "-740px";}
+       if(l==2){i.style.left = "-1480px";}
+       if(l==3){i.style.left = "-2220px";}
+       if(l==4){i.style.left = "-2960px";}
+       
+       if(i>4){l=4;}
+    }
+}
+
+span[0].onclick =()=>{
+    l--;
+    for(var i of div)
+    {
+       if(l==0){i.style.left = "0px";}
+       if(l==1){i.style.left = "-740px";}
+       if(l==2){i.style.left = "-1480px";}
+       if(l==3){i.style.left = "-2220px";}
+       if(i<0){l=0;}
+    }
+}
+</script>
