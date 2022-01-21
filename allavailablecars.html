@@ -42,12 +42,12 @@
 <!--filter box-->
 <div> <select id = "filterbox" onchange ="Selectcity()">
     <option value ="">Select City</option>
-    <option value ="mumb">Mumbai</option>
-    <option value = "bang">Bangalore</otion>
-   <option value="chen">chennai</option>
-   <option value="hyd">Hyderabad</option>
-   <option value="delhi">Delhi</option>
-   <option value=kolk"">Kolkata</option>
+    <option value ="Mumbai">Mumbai</option>
+    <option value = "Bangalore">Bangalore</otion>
+   <option value="Chennai">Chennai</option>
+   <option value="Hyderabad">Hyderabad</option>
+   <option value="Delhi">Delhi</option>
+   <option value="Kolkata">Kolkata</option>
    </select>
    <hr>
    </div>
@@ -56,9 +56,56 @@
    <input  id ="searchbox" type="search" placeholder="Search by car model">
 <img id ="searchicon" src ="https://www.revv.co.in/grapheneImages/CarsAndPricing/ic_back-white.svg">
 
-
+<div>
+    
 </div>
+</div>
+<!--riht side main box -->
+
+<div id ="availablecarsrightbox">
+<div id ="heading">Best Cars Starting From ₹ 10,400/month in your City</div>
+
  
-    </div>
+</div></div>
 </body>
 </html>
+
+
+<!--js script file-->
+<script>
+
+     var carsData = JSON.parse(localStorage.getItem('carsData'))||[];
+
+//mapping carsdata//
+  carsData.map(function(data){
+    var carsData = JSON.parse(localStorage.getItem('carsData'));
+   
+    var div =document.createElement("div");
+    div.setAttribute("id","box");
+    var image =document.createElement("img");
+    image.setAttribute("src",data.image_url);
+    var name =document.createElement("name");
+
+    name.textContent=data.name;
+    var fuel_type=document.createElement("p")
+    fuel_type.textContent=data.fuel_type;
+    var divl1 =document.createElement("div");
+    divl1.setAttribute("id","price")
+    var divl2=document.createElement("div");
+    divl2.setAttribute("id","cartype")
+    var divl3 = document.createElement("div");
+    var cartype=document.createElement("p")
+    cartype.textContent=data.cartype
+    
+    var p1 =document.createElement("p")
+    p1.textContent= data.price_per_month;
+    var p2 = document.createElement("p")
+    p2.textContent=data.strikedoffprice;
+    p2.style.textDecoration="line-through"
+    divl2.append(cartype,fuel_type)
+    divl1.append(p1,p2);
+div.append(image,name,divl2,divl1);
+   
+    document.querySelector("#availablecarsrightbox").append(div);
+});
+</script>

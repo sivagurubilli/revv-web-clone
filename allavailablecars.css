@@ -1,17 +1,19 @@
 #availablecarscontainer {
     width: 96%;
     margin: auto;
-    height: 800px;
-  
+    height: auto;
     border: 1px solid red;
+    display: flex;
   }
+  /*leftside box*/
+
   #availablecarsleftbox {
     width: 25%;
-    height: 100%;
-    margin-top: 90px;
+    margin-top: 100px;
     padding-left: 5px;
     border: 1px solid red;
   }
+  
   /**filtername style*/
   #filter {
     height: 25px;
@@ -53,6 +55,7 @@
   
     margin-top: 30px;
   }
+
   /*search box*/
   #searchbox {
     box-sizing: border-box;
@@ -66,4 +69,52 @@
     width: 20px;
     border: 1px solid red;
   }
+  /*rightbox*/
+  #availablecarsrightbox{
+    width: 70%;
+    margin: 100px 0 0 20px;
+    border: 1px solid red;
+    
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #heading{
+    height: 20px;
+    width: 100%;
+    border: 1px solid red;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  /*cars data box*/
+  #box{
+    
+    width: 200px;
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: 1px solid red;
+
+  }
+  img{
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+  }
+  p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  name{
   
+  margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #cartype{
+    display: flex;
+    justify-content: space-around;
+  }
+  #price{
+    display: flex;
+    justify-content: space-around;
+  }
