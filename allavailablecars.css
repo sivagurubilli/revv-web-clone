@@ -59,16 +59,25 @@
   /*search box*/
   #searchbox {
     box-sizing: border-box;
-    height: 30px;
+    height: 40px;
     margin-top: 20px;
     width: 100%;
   }
-  .searchicon {
-    padding: 8px 8px 10px;
-    height: 20px;
-    width: 20px;
-    border: 1px solid red;
-  }
+  
+#searchbox1>h4{
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
   /*rightbox*/
   #availablecarsrightbox{
     width: 70%;
