@@ -314,7 +314,7 @@
    /*our journey so far*/
 #oj{
   border-radius: 10px;
-  margin:auto;
+  margin-top:40px;
   width:1310px;
   height: 250px;
   background-color: white;
@@ -349,6 +349,46 @@ height: 250px;
 width: 150px;
 height: 150px;
 }
+
+
+/*whyrev sliding box style*/
+.imgwr{
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  margin-top:55px
+  
+
+}
+.textwr{
+margin-top:-100px;
+margin-left: 90px;
+background-color: white;
+font-size: 30px;
+margin-bottom: -5px;
+}
+.pwr{
+margin-top:10px;
+margin-left: 90px;
+background-color: white;
+color:rgb(133, 136, 143);
+font-size: 20px;
+
+}
+
+.divwr{
+     /* border: 1px solid green; */
+  border-radius: 18px;
+  min-width: 525px;
+  height: 170px;
+  position: relative;;
+  padding: 0 1px;
+  margin:10px 20px;
+  transition: 0.5s;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 /*faqs section*/
 .m{
   margin-left: 5%;
@@ -499,9 +539,15 @@ img{
   background-color: grey; 
 
  width: 1600px;
-margin-left: 1px;
- color: white;
+margin-left: 40px;
+ color: whitesmoke;
 }
 .scp:hover{
   color:white
+}
+h1{
+  font-size: 25px;
+  color:rgb(168,181,203);
+  margin-left: 20px;
+  
 }
