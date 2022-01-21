@@ -337,22 +337,17 @@ height: 150px;
 .scp:hover{
     color:white
 }
+</style>
 
-
-
-
-
-
-
-    </style>
 </head>
+
 <body>
-    
+    <!-- Feature Slider code -->
 <main>
     <h1>Feature</h1>
    
-    <spam>&#139;</spam>
-    <spam>&#155;</spam>
+     <spam>&#139;</spam>    <!--Used for "<"icone -->
+    <spam>&#155;</spam>       <!--Used for ">"icone -->
   
  <section>
       
@@ -380,6 +375,8 @@ height: 150px;
        </section>
 </main>
 
+
+<!-- Sanitized slider code -->
 <main >
 
     <h1>Sanitized & safe cars</h1>
@@ -408,6 +405,8 @@ height: 150px;
 
 </main>
 
+
+<!-- Why revv slider code -->
 <main >
 
     <h1>Why Revv?</h1>
@@ -441,9 +440,9 @@ height: 150px;
         </div>
 
         </section>
+    </main>
 
-</main>
-
+    <!-- Faq part -->
 <div class="m">FAQs</div>
 
 <div id="faq">
@@ -464,6 +463,9 @@ height: 150px;
 <p>Leh/Ladhakh, Spiti Valley & Kaza/Nako regions are not permitted to take Revv cars. Customer will be fully liable for any damages incurred to the car in that region.</p>
 
 </div>
+
+
+<!-- Happy Customer Slider -->
 <main class="mainhc">
 <div class="m">Happy Customer</div>
   
@@ -527,6 +529,8 @@ height: 150px;
     </section>
 </main>
 
+
+<!-- Revv App box -->
 <div id="divapp">
 
     <div class ="dflex">
@@ -545,8 +549,9 @@ height: 150px;
         </div>
     </div>
 </div>
-<div><h1>Our journey so far</h1></div>
 
+<!-- Our journey so far part -->
+<div><h1>Our journey so far</h1></div>
 <div id="oj">
 <div class ="ojflex"> 
 <div>
@@ -575,6 +580,7 @@ height: 150px;
 </div>
 </div>
 
+<!-- investors box -->
 <div><h1>Our investors</h1></div>
 
 <div id="oj">
@@ -606,6 +612,7 @@ height: 150px;
 
 <div style="margin:70px"></div>
 
+<!-- Serviceable cities box -->
 <div class="idsc">
     <h1 id="sch1">Serviceable cities</h1>
 <div class ="divsc"> 
@@ -646,18 +653,19 @@ height: 150px;
 </div>
 <div style="margin:70px"></div>
 <div>
-
     
-
 </body>
 </html>
 
 
 
 <script>
+
+    // for sliding part
     var span = document.getElementsByTagName('spam');
     var div = document.getElementsByTagName('div');
     var l=0;
+    // for sliding right sight
     span[1].onclick = ()=>{
     l++;
     for(var i of div)
@@ -672,6 +680,7 @@ height: 150px;
     }
 }
 
+// for sliding left sight
 span[0].onclick =()=>{
     l--;
     for(var i of div)
