@@ -5,7 +5,7 @@
     width: 98%;
     display: flex;
     background-size: cover;
-    border: 1px solid red;
+    
     background-image: url(https://cdn.pixabay.com/photo/2020/03/24/16/44/hyundai-4964667__340.jpg);
   }
   
@@ -17,12 +17,12 @@
     margin-top: 6%;
     margin-left: 5%;
     background-color: white;
-    border: 1px solid red;
+  
   }
   #subbox2 {
     height: 40%;
     width: 100%;
-    border: 1px solid red;
+  
     text-align: center;
   }
   /*img of hundai subsption */
@@ -53,7 +53,6 @@
     height: 100px;
     width: 90%;
     margin-left: 5%;
-    border: 1px solid red;
     margin-top: 20px;
     display: flex;
   }
@@ -62,7 +61,7 @@
     height: 100px;
     width: 100%;
     margin-left: 1%;
-    border: 1px solid red;
+    
   }
   /*fonticon */
   #placelog > i {
@@ -164,7 +163,6 @@
     height: 100px;
     width: 400px;
     margin:500px 0 0 30px;
-    border: 1px solid red;
   }
   
   /*right box in main box text*/
@@ -209,7 +207,7 @@
     background-color: #fff;
     padding: 5% 5%!important;
     display: block;
-    border: 1px solid red;
+
   }
   .row{
     flex-wrap: wrap;
@@ -258,12 +256,12 @@
     width: 100%;
     display: flex;
     height: 220px;
-    border: 1px solid red;
+    
   }
   #what-is-sub-left{
-    width: 50%;
+    width: 500px;
     height: 100%;
-    border: 1px solid red;
+    
   }
   
   #what-is-sub-left h2{
@@ -292,6 +290,7 @@
   margin-top: 17px;
   padding-right: 58px;
   }
+  /*subscriptin left box knowmore link*/
   #what-is-sub-left a{
     border-radius: 4px;
     border: 2px solid #ebebeb;
@@ -307,7 +306,202 @@
     margin-left: 10px;
   }
    #what-is-sub-right{
-    width: 50%;
-    border: 1px solid red;
+    width: 300px;
+   
+    
   
-  }
+   }
+   /*our journey so far*/
+#oj{
+  border-radius: 10px;
+  margin:auto;
+  width:1310px;
+  height: 250px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.ojflex{
+  background-color: white;
+  display: flex;
+margin-left:20px;
+height: 250px;
+}
+.ojflex>div{
+
+  background-color: white;
+  margin:30px;
+  margin-right: 210px;
+  
+}
+.ojimg{
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  
+  
+}
+#oj>h3{
+  font-size: 30px;
+  background-color: white;
+}
+.oiimg{
+  margin-top: -15px;
+width: 150px;
+height: 150px;
+}
+/*faqs section*/
+.m{
+  margin-left: 5%;
+  margin-top: 20px;
+  font-weight: bold;
+  color:rgb(168,181,203);
+  font-size: 40px;
+  
+}
+
+#faq{
+  font-size: 40px;
+  border: 1px solid green;
+  border-radius: 18px;
+  width:1150px;
+  height: 430px;
+  position: relative;;
+  padding:  0 50px;
+  padding-top: 1px;
+  margin:10px 50px;
+  transition: 0.5s;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+#faq>h2{
+  font-size: 20px;
+}
+#faq>p{
+  font-size: 14px;
+}
+/*featuers section*/
+.divf{
+  /* border: 1px solid green; */
+  border-radius: 15px;
+  min-width: 350px;
+  height: 220px;
+  position: relative;;
+  left: 0;
+  padding: 0 90px;
+  margin:10px 20px;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+      main{
+          /* border: 1px solid red; */
+          width: 100%;
+          height: 300px;
+         margin:auto;
+          overflow: hidden;
+          margin-top: 100px;
+         
+      }
+h1{
+  width:90%;
+  margin:1px auto;
+  /* background: #1967D2; */
+  margin-left: 190px;
+  font-weight: bold;
+  color:white;
+}
+spam{
+  /* border: 1px solid blue; */
+position:absolute;
+top:10%;
+left:76%;
+z-index:1;
+margin-left: 200px;
+width:10px;
+text-align:right;
+padding-left: 35px;
+font-size: 50px;
+
+}
+spam:nth-child(1){
+  margin-left:500px;
+  left: 80%;
+  
+}
+spam:nth-child(2){
+  left: 72%;
+}
+
+section{
+  /* border: 1px solid blue; */
+  width: 85%;
+  height: 300px;
+  margin:10px auto;
+  display:flex;
+  justify-content: left;
+  overflow-x:auto;
+}
+section::-webkit-srcollbar{
+  visibility: hidden;
+}
+.san{
+  /* border: 1px solid green; */
+  border-radius: 18px;
+  min-width:385px;
+  height: 230px;
+  position: relative;;
+  padding: 0 1px;
+  margin:10px 20px;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+img{
+  width:350px ;
+  height: 200px;
+  border-radius: 18px;
+}
+.imgt{
+  width:530px ;
+  height: 220px;
+  border-radius: 18px;
+  margin-left: -90px;
+}
+
+.idsc{
+  /* border:1px solid red; */
+  border-radius: 18px;
+          width: 1610px;
+          height:500px ;
+          background-color: grey;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          margin:auto;
+        
+}
+.divsc{
+  border-radius: 18px;
+  /* border:1px solid red; */
+  padding:40px;
+  display: flex;
+  width: 1520px;
+  height:368px ;
+  background-color:gray
+}
+.divsc>div{
+  background-color:grey;
+  margin:90px;
+  margin-right: 100px;
+  margin-top: -5px;
+}
+.scp{
+  background-color: grey;
+}
+#sch1{
+  background-color: grey; 
+
+ width: 1600px;
+margin-left: 1px;
+ color: white;
+}
+.scp:hover{
+  color:white
+}
