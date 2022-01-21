@@ -25,7 +25,7 @@
     text-align: left;
     color: #868686;
     margin-top: 5%;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   #citytext {
     font-family: Poppins;
@@ -36,8 +36,8 @@
     margin-left: 5px;
   }
   
-  /**filter box**/
-  #filterbox {
+  /**filter box of city selection**/
+  #filtercitybox{
     width: 90%;
     height: 60px;
     margin: 0 6% 0 0;
@@ -65,42 +65,96 @@
   }
   
 #searchbox1>h4{
-  margin-top: 10px;
+  margin-top:30px;
+}
+
+#minprice{
+  width: 120px;
+  height: 60px;
+  margin: 0 6% 0 0;
+  border: none;
+  outline: none;
+  color:black;
+  font-weight: 700;
+
+}
+.hrminprice{
+  opacity: 100%;
+  width: 100%;
+  margin-left: 1px;
+}
+#pricerange{
+  display: flex;
+  justify-content: space-around;
+  
+}
+#maxprice{
+  width: 120px;
+  height: 60px;
+  margin: 0 6% 0 0;
+  border: none;
+  outline: none;
+  color:black;
+  font-weight: 700;
+
+}
+#brand,#cartype,#fuel_type{
+  width: 90%;
+  height: 60px;
+  margin: 0 0 0 0;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 700;
+}
+hr{
+  width: 90%;
 }
 
 
 
 
-
-
-
-
-
-
-
   /*rightbox*/
+  #availablecarscontainer{
+    display: flex;
+  }
+  
   #availablecarsrightbox{
     width: 70%;
     margin: 100px 0 0 20px;
     border: 1px solid red;
-    
+    height: auto;
     display: flex;
     flex-wrap: wrap;
   }
   #heading{
-    height: 20px;
+    height: 40px;
     width: 100%;
     border: 1px solid red;
     font-size: 20px;
+  
+  
     padding-bottom: 10px;
   }
+  /*sorting bar*/
+  #sortprice{
+    margin-left:300px;
+    width: 15%;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 700;
+  }
+  
+
   /*cars data box*/
   #box{
     
     width: 200px;
     height: 300px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     border: 1px solid red;
 
   }

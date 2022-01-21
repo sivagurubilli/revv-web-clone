@@ -54,31 +54,77 @@
    <div id ="searchtxt">Search
    </div>
    <input  id ="searchbox" type="search" placeholder="Search by car model">
-<hr>
+
 <div id ="searchbox1">
 <h4>Price Range</h4>
-
 <div id ="pricerange">
-    <form>
+<div id ="minrange">
+    <select id ="minprice" onchange ="selectminprice()">
+    <option value="10500">10,500</option>
+    <option value="11500">11,500</option>
+    <option value="12500">12,500</option>
+    <option value="13500">13,500</option>
+    <option value="14500">14,500</option>
+    <option value="15500">15,500</option>
+    </select>
+    <hr class="hrminprice">
+</div>
 
-    </form>
+<div id ="maxrange">
+    
+    <select id ="maxprice" onchange ="selectmaxprice()">
+        <option value="14500">14,500</option>
+        <option value="16500">16,500</option>
+        <option value="18500">18,500</option>
+        <option value="20500">20,500</option>
+        <option value="22500">24,500</option>
+        <option value="26500">28,500</option>
+        </select>
+        <hr class="hrminprice">
+        
+    </div>
 </div>
 </div>
+<div>
+<select id ="brand" onchange ="selectbrand()">
+    <option value ="">Select brand</option>
+<option value ="hyundai">hyundai</option>
+<option value="mahindra">mahindra</option>
+</select>
+<hr>
+
+
+<select id ="cartype" onchange ="cartype()">
+    <option value ="">Select cartype</option>
+<option value ="hyundai">hatchback</option>
+<option value="mahindra">sedan</option>
+<option value ="suv">suv</option>
+<option value="muv">muv</option>
+</select>
+<hr>
+</div>
+        <div>
+<select id ="fuel_type" onchange ="fuel_type()">
+    <option value ="">Select fuel_type</option>
+<option value ="petrol">petrol</option>
+<option value="diesel">diesel</option>
+</select>
+<hr>
 </div>
 
-
-
-
-
-
+        </div>
 
 <!--right side main box -->
 
 <div id ="availablecarsrightbox">
-<div id ="heading">Best Cars Starting From ₹ 10,400/month in your City</div>
-
- 
-</div></div>
+    
+<div id ="heading">Best Cars Starting From ₹ 10,400/month in your City  <select id ="sortprice" onchange="sortprice()">
+    <option value="">Sort by price</option>
+    <option value ="Low">Low to High</option>
+    <option value ="High"> High to Low</option>
+    </select></div>
+</div>
+</div>
 </body>
 </html>
 
@@ -126,6 +172,7 @@ function selectcity(){
          var selected =document.querySelector("#filtercitybox").value;
          var filteredList = carsData.filter(function(elem){
              return elem.city ==selected
+             console.log(filteredList)
          })
          document.querySelector("#availablecarsrightbox").append(filteredList);
      }

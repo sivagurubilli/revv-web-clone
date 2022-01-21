@@ -311,6 +311,84 @@
    
   background-size: cover;
    }
+   
+#howitworkbox{
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+/*how it works main box*/
+
+#howitwork_hding{
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(27, 28, 36);
+  text-align: left;
+}
+#howitworkbxs{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  
+  height: 250px;
+}
+/*how it work box*/
+.hrdasedline{
+  position: absolute;
+  border-top: 2px dotted;
+  color: #000;
+  margin: 80px 80px 0 100px;
+  width: 65%;
+  display:  block!important;
+  overflow: visible;
+}
+/*hrdotted line*/
+
+.howitworkiconbox1{
+  width: 23%;
+height: 100%;
+
+}
+.circlebox{
+  border: 8px solid #ddd;
+  content: "\f09d";
+  height: 120px;
+  width: 120px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+  display: block;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 45px, rgb(0 0 0 / 22%) 0px 10px 18px;
+  border-radius: 50%;
+  margin: 10px 0 0 10px;
+
+}
+/*circle box of icons in how it works page*/
+
+.circlebox>i{
+  padding-top: 25px;
+}
+/*icons*/
+
+.howitworkiconbox1>h3{
+  text-align: left;
+  margin-left: 15px;
+  font-weight: 500px;
+  
+}
+.howitworkiconbox1>p{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 15px;
+   line-height: 1.5;
+  color: #212529;
+}
+/* styling of how it work box compleated*/
+
    /*our journey so far*/
 #oj{
   border-radius: 10px;
