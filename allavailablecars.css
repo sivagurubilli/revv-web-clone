@@ -2,7 +2,7 @@
   width: 96%;
   margin: auto;
   height: auto;
-  border: 1px solid red;
+ /* border: 1px solid red;*/
   display: flex;
 }
 /*leftside box*/
@@ -11,7 +11,7 @@
   width: 25%;
   margin-top: 80px;
   padding-left: 5px;
-  border: 1px solid red;
+  border: 1px solid grey;
 }
 
 /**filtername style*/
@@ -117,7 +117,7 @@ hr {
 #rightcont{
   width: 70%;
   margin: 80px 0 0 20px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   height: auto;
  
 }
@@ -125,7 +125,7 @@ hr {
 #availablecarsrightbox {
   width: 100%;
   margin: 10px 0 0 0;
-  border: 1px solid red;
+ /* border: 1px solid red;*/
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -133,7 +133,7 @@ hr {
 #heading {
   height: 40px;
   width: 100%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   font-size: 20px;
 
   padding-bottom: 10px;
@@ -146,16 +146,33 @@ hr {
   border: none;
   outline: none;
   color: black;
+  font-size: 18px;
   font-weight: 700;
 }
 
 /*cars data box*/
 #box {
-  width: 200px;
+  width: 250px;
   height: 300px;
-  margin-left: 10px;
+ margin-left: 25px;
   margin-top: 20px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+  text-align: center;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+a{
+  font-size: 22px;
+ margin-top: -10px;
+  text-decoration: none;
+  cursor: pointer;
+  color:blue;
+}
+#pay{
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 img {
   background-size: cover;
@@ -167,15 +184,17 @@ p {
   font-weight: 400;
 }
 name {
-  margin-left: 20px;
+  
   font-size: 20px;
   font-weight: 400;
 }
 #cartype {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: -10px;
 }
 #price {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: -15px;
 }

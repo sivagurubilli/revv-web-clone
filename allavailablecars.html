@@ -223,6 +223,7 @@ carsData.map(function(data){
     var divl2=document.createElement("div");
     divl2.setAttribute("id","cartype")
     var divl3 = document.createElement("div");
+    divl3.setAttribute("id","pay")
     var cartype=document.createElement("p")
     cartype.textContent=data.cartype
     
@@ -233,14 +234,30 @@ carsData.map(function(data){
     p2.style.textDecoration="line-through"
     divl2.append(cartype,fuel_type)
     divl1.append(p1,p2);
+    var btn = document.createElement("button")
+  btn.textContent= "Subsribe"
+  btn.addEventListener("click",function(){
+    gotopay(data);
+  });
+  var a = document.createElement('a');
+      var linkText = document.createTextNode("Pay");
+      a.appendChild(linkText);
+      a.title = "Pay";
+      a.href = "pay.html";
+    divl3.append(btn,a)
 
-  div.append(image,name,divl2,divl1);
+  div.append(image,name,divl2,divl1,divl3);
    
     document.querySelector("#availablecarsrightbox").append(div);
 });
+
+var carArr =JSON.parse(localStorage.getItem("carItems"))||[]
+function gotopay(data){
+    carArr.push(data)
+    localStorage.setItem("carItems",JSON.stringify(carArr));
 }
 
-
+}
 
 
 
