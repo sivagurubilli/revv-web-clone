@@ -131,10 +131,23 @@
 
 <!--js script file-->
 <script>
-
-     var carsData = JSON.parse(localStorage.getItem('carsData'))||[];
+var carsData = JSON.parse(localStorage.getItem('carsData'))||[];
+    displayData(carsData)
+    //for filtring by city//
+function selectcity(){
+         var selected =document.querySelector("#filtercitybox").value;
+         var filteredList = carsData.filter(function(elem){
+             return elem.city ==selected
+             console.log(filteredList)
+         })
+       displayData (filteredList);
+     }
 
 //mapping carsdata//
+
+     
+function displayData(carsData){
+    document.querySelector("#availablecarsrightbox").innerHTML="";
 carsData.map(function(data){
     var carsData = JSON.parse(localStorage.getItem('carsData'));
    
@@ -166,16 +179,8 @@ div.append(image,name,divl2,divl1);
    
     document.querySelector("#availablecarsrightbox").append(div);
 });
+}
 
-
-function selectcity(){
-         var selected =document.querySelector("#filtercitybox").value;
-         var filteredList = carsData.filter(function(elem){
-             return elem.city ==selected
-             console.log(filteredList)
-         })
-         document.querySelector("#availablecarsrightbox").append(filteredList);
-     }
 
 
 
