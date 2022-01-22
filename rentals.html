@@ -164,7 +164,7 @@ hr{
 
 #faq{
     font-size: 40px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     border-radius: 18px;
     width:1600px;
     height: 530px;
@@ -178,10 +178,10 @@ hr{
 
 }
 .hc{
-       border: 1px solid green;
+       /* border: 1px solid green; */
        border-radius: 18px;
     min-width: 315px;
-    height: 360px;
+    height: 410px;
     position: relative;
     padding: 0 30px;
     margin:10px 20px;
@@ -191,7 +191,7 @@ hr{
 }
 .imghc{
     width:55px;
-    height: 55px;
+    height: 50px;
     margin-left: 280px;
     margin-bottom:-100px;
     background-color: white;
@@ -199,9 +199,9 @@ hr{
 }
 #hcf{
 
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 85%;
-    height:400px;
+    height:500px;
     margin:auto;
     margin:10px auto;
     display:flex;
@@ -222,9 +222,14 @@ hr{
            margin:auto;
             overflow: hidden;
             margin-top: 100px;
+            
            
         }
 
+        .mainhc::-webkit-srcollbar{
+    visibility: hidden;
+    overflow: hidden;
+}
         #divapp{
             
             border-radius: 18px;
@@ -363,7 +368,7 @@ height: 150px;
         <div class="divf">
             <img class="imgt", src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_01-min.jpg">
         </div>
-        <div>
+        <div class="divf">
             <img class="imgt", src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_02-min.jpg">
         </div>
         <div class="divf">
@@ -511,7 +516,7 @@ height: 150px;
         <p>Booked for 4 days for a family trip. Car was water washed and sanitized when I recieved it. Trip and the process were very comfortable and sanitized when I revv self drive car
             eved It. Trip and the process were very comfortable and hassle-free. Best self-drive car service provider. I strongly recommend Revv. Looking forward to using Revv car again
         </p>
-         <img  class="imghc" style=" margin-bottom:700px;" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/left-quote.png">
+         <img  class="imghc" style=" margin-bottom:2500px;" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/icons/left-quote.png">
      </div>
 
      <div  class="hc">
@@ -532,11 +537,11 @@ height: 150px;
 
 
 <!-- Revv App box -->
-<div id="divapp">
+<div id="divapp" >
 
-    <div class ="dflex">
+    <div class ="dflex " >
 
-        <div>
+        <div style="background-color: white">
         <h1 style="margin-top: 70px; background-color: white;">Download the Revv app</h1>
         <div class="dflex">
         <img id="da" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/app_store.webp">
