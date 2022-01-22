@@ -1,120 +1,174 @@
 #availablecarscontainer {
-    width: 96%;
-    margin: auto;
-    height: auto;
-    border: 1px solid red;
-    display: flex;
-  }
-  /*leftside box*/
+  width: 96%;
+  margin: auto;
+  height: auto;
+  border: 1px solid red;
+  display: flex;
+}
+/*leftside box*/
 
-  #availablecarsleftbox {
-    width: 25%;
-    margin-top: 100px;
-    padding-left: 5px;
-    border: 1px solid red;
-  }
-  
-  /**filtername style*/
-  #filter {
-    height: 25px;
-    text-align: left;
-    margin-top: 100px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-    color: #868686;
-    margin-top: 5%;
-    margin-left: 10px;
-  }
-  #citytext {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-    color: #868686;
-    margin-left: 5px;
-  }
-  
-  /**filter box**/
-  #filterbox {
-    width: 90%;
-    height: 60px;
-    margin: 0 6% 0 0;
-    border: none;
-    outline: none;
-    color: #868686;
-    font-weight: 700;
-  }
-  #serchtxt {
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: left;
-    color: rgba(27, 28, 36, 0.8);
-  
-    margin-top: 30px;
-  }
+#availablecarsleftbox {
+  width: 25%;
+  margin-top: 100px;
+  padding-left: 5px;
+  border: 1px solid red;
+}
 
-  /*search box*/
-  #searchbox {
-    box-sizing: border-box;
-    height: 30px;
-    margin-top: 20px;
-    width: 100%;
-  }
-  .searchicon {
-    padding: 8px 8px 10px;
-    height: 20px;
-    width: 20px;
-    border: 1px solid red;
-  }
-  /*rightbox*/
-  #availablecarsrightbox{
-    width: 70%;
-    margin: 100px 0 0 20px;
-    border: 1px solid red;
-    
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #heading{
-    height: 20px;
-    width: 100%;
-    border: 1px solid red;
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-  /*cars data box*/
-  #box{
-    
-    width: 200px;
-    height: 300px;
-    margin-left: 10px;
-    margin-top: 5px;
-    border: 1px solid red;
+/**filtername style*/
+#filter {
+  height: 25px;
+  text-align: left;
+  margin-top: 100px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #868686;
+  margin-top: 5%;
+  margin-left: 5px;
+}
+#citytext {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #868686;
+  margin-left: 5px;
+}
 
-  }
-  img{
-    background-size: cover;
-    height: 150px;
-    width: 100%;
-  }
-  p{
-    font-size: 20px;
-    font-weight: 400;
-  }
-  name{
-  
+/**filter box of city selection**/
+#filtercitybox {
+  width: 90%;
+  height: 60px;
+  margin: 0 6% 0 0;
+  border: none;
+  outline: none;
+  color: #868686;
+  font-weight: 700;
+}
+#serchtxt {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: rgba(27, 28, 36, 0.8);
+
+  margin-top: 30px;
+}
+
+/*search box*/
+#searchbox {
+  box-sizing: border-box;
+  height: 40px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#searchbox1 > h4 {
+  margin-top: 30px;
+}
+
+#minprice {
+  width: 120px;
+  height: 60px;
+  margin: 0 6% 0 0;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 700;
+}
+.hrminprice {
+  opacity: 100%;
+  width: 100%;
+  margin-left: 1px;
+}
+#pricerange {
+  display: flex;
+  justify-content: space-around;
+}
+#maxprice {
+  width: 120px;
+  height: 60px;
+  margin: 0 6% 0 0;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 700;
+}
+#brand,
+#cartype,
+#fuel_type {
+  width: 90%;
+  height: 60px;
+  margin: 0 0 0 0;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 700;
+}
+hr {
+  width: 90%;
+}
+
+/*rightbox*/
+#availablecarscontainer {
+  display: flex;
+}
+
+#availablecarsrightbox {
+  width: 70%;
+  margin: 100px 0 0 20px;
+  border: 1px solid red;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#heading {
+  height: 40px;
+  width: 100%;
+  border: 1px solid red;
+  font-size: 20px;
+
+  padding-bottom: 10px;
+}
+/*sorting bar*/
+#sortprice {
+  margin-left: 300px;
+  width: 15%;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 700;
+}
+
+/*cars data box*/
+#box {
+  width: 200px;
+  height: 300px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border: 1px solid red;
+}
+img {
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+}
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+name {
   margin-left: 20px;
-    font-size: 20px;
-    font-weight: 400;
-  }
-  #cartype{
-    display: flex;
-    justify-content: space-around;
-  }
-  #price{
-    display: flex;
-    justify-content: space-around;
-  }
+  font-size: 20px;
+  font-weight: 400;
+}
+#cartype {
+  display: flex;
+  justify-content: space-around;
+}
+#price {
+  display: flex;
+  justify-content: space-around;
+}
