@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div{
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        .compare_table{
+            padding-left: 13%;
+            padding-right: 13%;
+            display: grid;
+            grid-template-columns: 45% 20% 35%;
+            grid-template-rows:  repeat(1,1fr);
+        }
+        .compare_table>div>h3{
+            font-weight: lighter;
+        }
+        .compare_table>div{
+            text-align: center;
+
+        }
+        .fsize{
+            font-size: 30px;
+            padding-left: 15%;
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+        span{
+            font-weight: lighter;
+            color: gray;
+        }
+        .compare_table>p{
+            font-size: 5px;
+        }
+        .compare_table>div>div{
+            border-top: 2px solid whitesmoke; 
+        }
+       .compare_table .firstblock{
+            text-align: left;
+            color: darkslategray;
+        }
+        .firstblock>div{
+            height: 50px;
+        }
+        .compare_table .middle_block{
+            box-shadow: rgba(113, 165, 218, 0.3) 1px 1px 15px; 
+
+        }
+        .middle_block>div{
+            height: 50px;
+        }
+        .lastblock>div{
+
+            height: 50px;
+        }
+        .lastblock div:nth-child(2n){
+    
+        }
+        @media only screen and (max-width:769px){
+            .compare_table{
+            padding-left: 10px;
+            padding-right: 10px;
+            display: grid;
+            grid-template-columns: 50% 25% 25%;
+            grid-template-rows:  repeat(3,1fr);
+            }
+            .compare_table .firstblock{
+            text-align: left;
+            color: darkslategray;
+            font-size: 13px;
+            }  
+            .fsize{
+            font-size: 18px;
+            padding-left: 10px;
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="fsize">
+        <span>Compare</span>  <b>Subscription vs buying</b>
+    </div>
+    <div class="compare_table">
+        <div class="firstblock">
+            <div></div>
+            <div><h3>Zero down payment & roadtax</h3></div>
+            <div><h3>Annual insurance included</h3></div>
+            <div><h3>Free service & maintenance</h3></div>
+            <div><h3>Return or extend anytime</h3></div>
+            <div><h3>Option to buy-out the car</h3></div>
+            <div><h3>No long term commitment</h3></div>
+            <div><h3>Doorstep pick/drop for maintenance & service</h3></div>
+        </div>
+        <div class="middle_block">
+            <div><h4>Subscribe</h4></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/mark.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/mark.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/mark.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/mark.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/mark.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/mark.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/mark.svg" alt=""></div>
+
+        </div>
+        <div class="lastblock">
+            <div><h4>Buy</h4></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/cross.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/cross.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/cross.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/cross.svg" alt=""></div>
+            <div> <span>NA</span></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/cross.svg" alt=""></div>
+            <div><img src="https://www.revv.co.in/grapheneImages/newopen/cross.svg" alt=""></div>
+
+        </div>
+    </div>
+</body>
+</html>
