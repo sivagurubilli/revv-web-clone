@@ -88,26 +88,28 @@
 <div>
 <select id ="brand" onchange ="selectbrand()">
     <option value ="">Select brand</option>
-<option value ="hyundai">hyundai</option>
-<option value="mahindra">mahindra</option>
+<option value ="hyundai">Hyundai</option>
+<option value="mahindra">Mahindra</option>
 </select>
 <hr>
+</div>
 
+<div>
 
 <select id ="cartype" onchange ="cartype()">
     <option value ="">Select cartype</option>
-<option value ="hatchback">hatchback</option>
-<option value="sedan">sedan</option>
-<option value ="suv">suv</option>
-<option value="muv">muv</option>
+<option value ="hatchback">Hatchback</option>
+<option value="sedan">Sedan</option>
+<option value ="suv">Suv</option>
+<option value="muv">Muv</option>
 </select>
 <hr>
 </div>
         <div>
 <select id ="fuel_type" onchange ="fuel_type()">
     <option value ="">Select fuel_type</option>
-<option value ="petrol">petrol</option>
-<option value="diesel">diesel</option>
+<option value ="petrol">Petrol</option>
+<option value="diesel">Diesel</option>
 </select>
 <hr>
 </div>
@@ -126,6 +128,45 @@
 
         </div></div>
 
+</div>
+
+<!--social page-->
+
+
+<div class="social-media">
+    <div id="social_container">
+        <div>
+           <div><img src="https://www.revv.co.in/imgs/revvLogo.png" alt=""></div>
+           <div class="social">
+               <div><a href="https://www.facebook.com/revvindia/" class="fa fa-facebook"></a></div>
+               <div><a href="https://twitter.com/revv_india" class="fa fa-twitter"></a></div>
+               <div><a href="https://www.instagram.com/revv_india/" class="fa fa-instagram"></a></div>
+               <div><a href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q" class="fa fa-youtube-play"></a></div>
+               <div><a href="https://www.linkedin.com/company/revv-self-drive-car" class="fa fa-linkedin"></a></div>
+           </div>
+        </div>
+        <div class="contact_color1">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">subscriptions</a></div>
+            <div><a href="#">tariffs</a></div>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">policy</a></div>
+            <div><a href="#">Blog</a></div>
+        </div>
+        <div>
+            <div>
+                <h4 style="font-size: 22px;margin-bottom: 0px;">Have Questions?</h4>
+                <p style="font-size: 16px;">24/7 Customer Support</p>
+             </div>
+            <div class="contact_color">
+                <div><a href="#">Contact us</a></div>
+                <div><p>+91-9250035555 </p></div>
+                <div><a href="#">care@revv.co.in</a></div>
+                
+            </div>
+        </div>
+    </div>
+    <p style="font-size: 10px;"><b>&copy</b> Primemover Mobility Technologies Pvt Ltd. All rights reserved </p>
 </div>
 </body>
 </html>
@@ -207,7 +248,7 @@ function selectminprice(){
 function displayData(carsData){
     document.querySelector("#availablecarsrightbox").innerHTML="";
 carsData.map(function(data){
-    var carsData = JSON.parse(localStorage.getItem('carsData'));
+    JSON.parse(localStorage.getItem("carItems"))||[]
    
     var div =document.createElement("div");
     div.setAttribute("id","box");
@@ -215,7 +256,7 @@ carsData.map(function(data){
     image.setAttribute("src",data.image_url);
     var name =document.createElement("name");
 
-    name.textContent=data.name;
+    name.textContent= data.name;
     var fuel_type=document.createElement("p")
     fuel_type.textContent=data.fuel_type;
     var divl1 =document.createElement("div");
@@ -251,7 +292,7 @@ carsData.map(function(data){
     document.querySelector("#availablecarsrightbox").append(div);
 });
 
-var carArr =JSON.parse(localStorage.getItem("carItems"))||[]
+var carArr =[]
 function gotopay(data){
     carArr.push(data)
     localStorage.setItem("carItems",JSON.stringify(carArr));
