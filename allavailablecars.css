@@ -9,7 +9,7 @@
 
 #availablecarsleftbox {
   width: 25%;
-  margin-top: 100px;
+  margin-top: 80px;
   padding-left: 5px;
   border: 1px solid red;
 }
@@ -18,13 +18,13 @@
 #filter {
   height: 25px;
   text-align: left;
-  margin-top: 100px;
+ 
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
   text-align: left;
   color: #868686;
-  margin-top: 5%;
+  margin-top: 5px;
   margin-left: 5px;
 }
 #citytext {
@@ -114,10 +114,17 @@ hr {
 #availablecarscontainer {
   display: flex;
 }
+#rightcont{
+  width: 70%;
+  margin: 80px 0 0 20px;
+  border: 1px solid red;
+  height: auto;
+ 
+}
 
 #availablecarsrightbox {
-  width: 70%;
-  margin: 100px 0 0 20px;
+  width: 100%;
+  margin: 10px 0 0 0;
   border: 1px solid red;
   height: auto;
   display: flex;

@@ -73,12 +73,12 @@
 <div id ="maxrange">
     
     <select id ="maxprice" onchange ="selectmaxprice()">
+        <option value="13500">13,500</option>
         <option value="14500">14,500</option>
-        <option value="16500">16,500</option>
+        <option value="15500">15,500</option>
         <option value="18500">18,500</option>
         <option value="20500">20,500</option>
-        <option value="22500">24,500</option>
-        <option value="26500">28,500</option>
+        <option value="22500">22,500</option>
         </select>
         <hr class="hrminprice">
         
@@ -96,8 +96,8 @@
 
 <select id ="cartype" onchange ="cartype()">
     <option value ="">Select cartype</option>
-<option value ="hyundai">hatchback</option>
-<option value="mahindra">sedan</option>
+<option value ="hatchback">hatchback</option>
+<option value="sedan">sedan</option>
 <option value ="suv">suv</option>
 <option value="muv">muv</option>
 </select>
@@ -115,15 +115,17 @@
         </div>
 
 <!--right side main box -->
+<div id ="rightcont">    
+    <div id ="heading">Best Cars Starting From ₹ 10,400/month in your City
+        <select id ="sortprice" onchange="sortprice()">
+        <option value="">Sort by price</option>
+        <option value ="Low">Low to High</option>
+        <option value ="High"> High to Low</option>
+        </select></div>
+        <div id ="availablecarsrightbox">
 
-<div id ="availablecarsrightbox">
-    
-<div id ="heading">Best Cars Starting From ₹ 10,400/month in your City  <select id ="sortprice" onchange="sortprice()">
-    <option value="">Sort by price</option>
-    <option value ="Low">Low to High</option>
-    <option value ="High"> High to Low</option>
-    </select></div>
-</div>
+        </div></div>
+
 </div>
 </body>
 </html>
@@ -136,12 +138,68 @@ var carsData = JSON.parse(localStorage.getItem('carsData'))||[];
     //for filtring by city//
 function selectcity(){
          var selected =document.querySelector("#filtercitybox").value;
-         var filteredList = carsData.filter(function(elem){
+         var filteredListbycity= carsData.filter(function(elem){
              return elem.city ==selected
-             console.log(filteredList)
          })
-       displayData (filteredList);
+       displayData (filteredListbycity);
      }
+
+     function selectbrand(){
+         var selected =document.querySelector("#brand").value;
+         var filteredListbybrand = carsData.filter(function(elem){
+             return elem.brand ==selected
+         })
+       displayData (filteredListbybrand);
+     }
+     function cartype(){
+         var selected =document.querySelector("#cartype").value;
+         var filteredListbycartype = carsData.filter(function(elem){
+             return elem.cartype ==selected
+         })
+       displayData (filteredListbycartype);
+     }
+     function fuel_type(){
+         var selected =document.querySelector("#fuel_type").value;
+         var filteredListbyfuel_type = carsData.filter(function(elem){
+             return elem.fuel_type ==selected
+         })
+       displayData (filteredListbyfuel_type);
+     }
+function sortprice(){
+    var selected=document.querySelector("#sortprice").value
+    if(selected=="High"){
+        carsData.sort(function(a,b){
+            return Number(b.price_per_month)-Number(a.price_per_month);
+        });
+    }
+    
+    if(selected=="Low"){
+        carsData.sort(function(a,b){
+            return Number(a.price_per_month)-Number(b.price_per_month);
+        });
+    }
+    displayData(carsData)
+}
+function selectminprice(){
+         var selected =document.querySelector("#minprice").value;
+         var filteredListbyprice= carsData.filter(function(elem){
+             return elem.price_per_month >=selected
+         })
+       displayData (filteredListbyprice);
+     }
+     function selectmaxprice(){
+         var selected =document.querySelector("#maxprice").value;
+         var filteredListbymaxprice= carsData.filter(function(elem){
+             return elem.price_per_month <=selected
+         })
+       displayData (filteredListbymaxprice);
+     }
+
+
+
+
+
+
 
 //mapping carsdata//
 
@@ -175,11 +233,14 @@ carsData.map(function(data){
     p2.style.textDecoration="line-through"
     divl2.append(cartype,fuel_type)
     divl1.append(p1,p2);
-div.append(image,name,divl2,divl1);
+
+  div.append(image,name,divl2,divl1);
    
     document.querySelector("#availablecarsrightbox").append(div);
 });
 }
+
+
 
 
 
