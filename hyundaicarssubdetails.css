@@ -8,7 +8,17 @@
     
     background-image: url(https://cdn.pixabay.com/photo/2020/03/24/16/44/hyundai-4964667__340.jpg);
   }
-  
+  @media only screen and (max-width:770px){
+
+    #avail_carsbox {
+      height: 400px;
+
+  }
+  #carspricesmallbox{
+    width: 90%;
+    height: 60px;
+}
+  }
   /*leftside box*/
   
   #subbox {
@@ -48,6 +58,22 @@
     text-align: center;
     color: #5a5254;
     font-size: 25px;
+  }
+  @media only screen and (max-width:770px){
+    #placelog {
+      height: 50px;
+    }
+    #select_city {
+      height: 50px;
+    }
+    #carspricesmallbox{
+      width: 90%;
+      height: 60px;
+    }
+    .hyundsub1 {
+    
+      height: 10px;
+    }
   }
   #placelog {
     height: 100px;
@@ -263,7 +289,16 @@
     height: 220px;
     
   }
-  
+  @media only screen and (max-width:770px){
+    #what-is-sub-left{
+      width: 250px;
+      height: 150px;
+    }
+    #what-is-sub-right>img{
+      width: 250px;
+     height: 150px;
+  }
+}
   #what-is-sub-left h2{
   font-family: Poppins;
       font-size: 22px;

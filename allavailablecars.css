@@ -79,6 +79,29 @@
   color: black;
   font-weight: 700;
 }
+@media only screen and (max-width:770px){
+#minprice{
+  width:60px;
+  height: 30px;
+}
+#box {
+  width: 250px;
+  height: 250px;
+}
+#maxprice{
+  width:60px;
+  height: 30px;
+}
+
+#sortprice {
+  margin-left: 150px;
+}
+img {
+  background-size: cover;
+  height: 100px;
+}
+
+}
 .hrminprice {
   opacity: 100%;
   width: 100%;

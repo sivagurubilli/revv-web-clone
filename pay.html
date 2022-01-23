@@ -175,6 +175,15 @@ width: 400px;
 padding-left: 20px;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+@media only screen and (max-width:770px){
+  #leftbox{
+width:200px ;
+  }
+  #box {
+  width: 150px;
+  height: 300px;
+  }
+}
 #body{
 display: flex;
 }
@@ -197,7 +206,7 @@ font-size: 16px;
 span{
 color:green
 }
-h3{
+#h3span{
    color: grey;
 }
 #payform{
@@ -222,14 +231,19 @@ h3{
 }
 .disch2{
   margin: 100px;
-  color: pink;
+  color:royalblue;
 }
 .payh3{
   color:blueviolet;
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 h2{
   color:green;
+}
+#h31{
+  color: blue;
 }
 </style>
 
@@ -282,10 +296,11 @@ h2{
 <div id ="disc">
    Discount
 </div>
-<h3>for 2 months of subscription disc -<span>5%</span></h3>
-<h3>for 3 months of subscription disc -<span>10%</span></h3>
-<h3>for 6 months of subscription disc -<span>20%</span></h3>
-<h3>for 12 months of subscription disc -<span>30%</span></h3>
+<h3 id ="h3span">for 2 months of subscription disc -<span>5%</span></h3>
+<h3 id ="h3span" >for 3 months of subscription disc -<span>10%</span></h3>
+<h3 id ="h3span" >for 3 months of subscription disc -<span>10%</span></h3>
+<h3 id ="h3span">for 6 months of subscription disc -<span>20%</span></h3>
+<h3 id ="h3span">for 12 months of subscription disc -<span>30%</span></h3>
       </div>
 
       
@@ -300,8 +315,10 @@ h2{
      
 </div>
 <div id ="payform">
+
   <h3 class="payh3">Pay with your digital payments card and get your subscribed car at your doorstep within 1 hour</h3>
-   <form>
+  <h3 id="h31"></h3>
+  <form>
       <input id ="name" type ="text" placeholder="enter_your_name">
       <br/>
       <input id ="ph_no" type ="number" placeholder="phone no">
@@ -313,6 +330,7 @@ h2{
       rows="8";
       placeholder="enter your address"></textarea>
       <br/>
+      
 <input id ="card_no" type="number" placeholder="card_no">
 <br/>
 <input id ="cvv" type ="number" placeholder="enter_cvv_no">
@@ -394,6 +412,8 @@ else if(selected==12){
 
 document.querySelector("h2").textContent=`Total amount is ₹ ${price}/ ----you got the discount of ${discount} %`
 document.querySelector("h4").textContent=`**This total price is after discount.-if you choose for 1 month you are not eligible for discount.**`
+ document.querySelector("#h31") .textContent=`pay  ₹ ${price}/--`
+
 }
 
 document.querySelector("form").addEventListener("submit",pay)
@@ -402,12 +422,13 @@ function pay(event){
   var name=document.querySelector("#name").value
         var ph_no =document.querySelector("#ph_no").value
         var textarea= document.querySelector("#textarea").value
+       
         var card_no = document.querySelector("#card_no").value
         var cvv = document.querySelector("#cvv").value
        
        if(ph_no.length==10&&card_no.length==12&&cvv.length==3){
 
-         alert("thanks for revv you will get your at your door step")
+         alert("thanks for revv you will get your car at your door step")
        }
        else{
          alert("please fill with correct details")
