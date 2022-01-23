@@ -311,11 +311,89 @@
    
   background-size: cover;
    }
+   
+#howitworkbox{
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+/*how it works main box*/
+
+#howitwork_hding{
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(27, 28, 36);
+  text-align: left;
+}
+#howitworkbxs{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  
+  height: 250px;
+}
+/*how it work box*/
+.hrdasedline{
+  position: absolute;
+  border-top: 2px dotted;
+  color: #000;
+  margin: 80px 80px 0 100px;
+  width: 65%;
+  display:  block!important;
+  overflow: visible;
+}
+/*hrdotted line*/
+
+.howitworkiconbox1{
+  width: 23%;
+height: 100%;
+
+}
+.circlebox{
+  border: 8px solid #ddd;
+  content: "\f09d";
+  height: 120px;
+  width: 120px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+  display: block;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 45px, rgb(0 0 0 / 22%) 0px 10px 18px;
+  border-radius: 50%;
+  margin: 10px 0 0 10px;
+
+}
+/*circle box of icons in how it works page*/
+
+.circlebox>i{
+  padding-top: 25px;
+}
+/*icons*/
+
+.howitworkiconbox1>h3{
+  text-align: left;
+  margin-left: 15px;
+  font-weight: 500px;
+  
+}
+.howitworkiconbox1>p{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 15px;
+   line-height: 1.5;
+  color: #212529;
+}
+/* styling of how it work box compleated*/
+
    /*our journey so far*/
 #oj{
   border-radius: 10px;
   margin-top:40px;
-  width:1310px;
+  width:1210px;
   height: 250px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -403,7 +481,7 @@ font-size: 20px;
   font-size: 40px;
   border: 1px solid green;
   border-radius: 18px;
-  width:1150px;
+  width:1050px;
   height: 430px;
   position: relative;;
   padding:  0 50px;
@@ -510,9 +588,9 @@ img{
 .idsc{
   /* border:1px solid red; */
   border-radius: 18px;
-          width: 1610px;
+          width: 1210px;
           height:500px ;
-          background-color: grey;
+          background-color: rgb(54, 54, 54);
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           margin:auto;
         
@@ -522,23 +600,24 @@ img{
   /* border:1px solid red; */
   padding:40px;
   display: flex;
-  width: 1520px;
+  width: 1120px;
   height:368px ;
-  background-color:gray
+  background-color:rgb(54, 54, 54);
 }
 .divsc>div{
-  background-color:grey;
-  margin:90px;
-  margin-right: 100px;
+  background-color:rgb(54, 54, 54);
+  margin:30px;
+  margin-right: 50px;
   margin-top: -5px;
 }
 .scp{
-  background-color: grey;
+  background-color: rgb(54, 54, 54);
+  color: rgb(202, 202, 202);
 }
 #sch1{
-  background-color: grey; 
+  background-color: rgb(54, 54, 54);
 
- width: 1600px;
+ width: 300px;
 margin-left: 40px;
  color: whitesmoke;
 }
