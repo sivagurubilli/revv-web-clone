@@ -8,17 +8,7 @@
     
     background-image: url(https://cdn.pixabay.com/photo/2020/03/24/16/44/hyundai-4964667__340.jpg);
   }
-  @media only screen and (max-width:770px){
-
-    #avail_carsbox {
-      height: 400px;
-
-  }
-  #carspricesmallbox{
-    width: 90%;
-    height: 60px;
-}
-  }
+  
   /*leftside box*/
   
   #subbox {
@@ -58,22 +48,6 @@
     text-align: center;
     color: #5a5254;
     font-size: 25px;
-  }
-  @media only screen and (max-width:770px){
-    #placelog {
-      height: 50px;
-    }
-    #select_city {
-      height: 50px;
-    }
-    #carspricesmallbox{
-      width: 90%;
-      height: 60px;
-    }
-    .hyundsub1 {
-    
-      height: 10px;
-    }
   }
   #placelog {
     height: 100px;
@@ -289,16 +263,7 @@
     height: 220px;
     
   }
-  @media only screen and (max-width:770px){
-    #what-is-sub-left{
-      width: 250px;
-      height: 150px;
-    }
-    #what-is-sub-right>img{
-      width: 250px;
-     height: 150px;
-  }
-}
+  
   #what-is-sub-left h2{
   font-family: Poppins;
       font-size: 22px;
@@ -428,7 +393,7 @@ height: 100%;
 #oj{
   border-radius: 10px;
   margin-top:40px;
-  width:1310px;
+  width:1210px;
   height: 250px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -501,7 +466,6 @@ font-size: 20px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-/* buy vs sub table */
 
 /*faqs section*/
 .m{
@@ -517,7 +481,7 @@ font-size: 20px;
   font-size: 40px;
   border: 1px solid green;
   border-radius: 18px;
-  width:1150px;
+  width:1050px;
   height: 430px;
   position: relative;;
   padding:  0 50px;
@@ -624,9 +588,9 @@ img{
 .idsc{
   /* border:1px solid red; */
   border-radius: 18px;
-          width: 1610px;
+          width: 1210px;
           height:500px ;
-          background-color: grey;
+          background-color: rgb(54, 54, 54);
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           margin:auto;
         
@@ -636,23 +600,24 @@ img{
   /* border:1px solid red; */
   padding:40px;
   display: flex;
-  width: 1520px;
+  width: 1120px;
   height:368px ;
-  background-color:gray
+  background-color:rgb(54, 54, 54);
 }
 .divsc>div{
-  background-color:grey;
-  margin:90px;
-  margin-right: 100px;
+  background-color:rgb(54, 54, 54);
+  margin:30px;
+  margin-right: 50px;
   margin-top: -5px;
 }
 .scp{
-  background-color: grey;
+  background-color: rgb(54, 54, 54);
+  color: rgb(202, 202, 202);
 }
 #sch1{
-  background-color: grey; 
+  background-color: rgb(54, 54, 54);
 
- width: 1600px;
+ width: 300px;
 margin-left: 40px;
  color: whitesmoke;
 }
@@ -665,90 +630,3 @@ h1{
   margin-left: 20px;
   
 }
-
-/*social media */
-.fa {
-  padding: 5px;
-  font-size: 25px;
-  width: 25px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 30px 2px;
-  }
-  .fa-facebook {
-  background: rgb(14,186,186);
-  color: white;
-  }
-  .fa-twitter {
-  background: rgb(14,186,186);
-  color: white;
-  }
-  .fa-youtube-play {
-  background: rgb(14,186,186);
-  color: white;
-  }
-
-  .fa-instagram {
-  background: rgb(14,186,186);
-  color: white;
-  }
-  .fa-linkedin {
-  background: rgb(14,186,186);
-  color: white;
-  }
-  .social{
-      display: flex;
-      flex-wrap: wrap;
-  }
-  #social_container{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-template-rows: 1fr;
-      grid-gap: 20px;
-      justify-content: space-around;
-  }
-  .social-media{
-      background-color: rgb(74,78,90);
-      padding-bottom: 10px;
-      color: white;
-      padding-left: 10%;
-      padding-top: 20px;
-
-  }
-  .contact_color1 a{
-      color: white;
-      font-size: 18px;
-      line-height: 25px;
-  }
-  .contact_color{
-      color: turquoise;
-      font-size: 1.5rem;
-      line-height: 10px;
-  }
-  .contact_color a{
-      color: turquoise;
-  }
-  @media only screen and (max-width:770px){
-      #social_container{
-      display: grid;
-      grid-template-columns:1fr;
-      grid-template-rows: repeat(3,1fr);
-      grid-gap: 20px;
-      justify-content: space-around;
-  } 
-  .social{
-      display: flex;
-      flex-wrap: wrap;
-  }
-  .social-media{
-      background-color: rgb(74,78,90);
-      padding-bottom: 10px;
-      color: white;
-      padding-left: 2%;
-      padding-top: 2%;
-
-  }
-  }
-
-
