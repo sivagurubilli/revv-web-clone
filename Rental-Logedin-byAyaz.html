@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Rental In India</title>
+    <style>
+        
+        #ayaznavbar{
+            width: 100%;
+            height: 50px;
+    
+            position: fixed;
+            display: flex;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            padding: 0px 60px;
+            
+        }
+        #ayazicon{
+            display: flex;
+            margin-left: 0%;
+            width: 32%;
+            margin:1px 0px;
+            padding: 0px 10px 0px 30px;
+        }
+        
+        .ayazbolder{
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .ayazawithborder{
+            display:flex;
+            border: 1px solid rgb(195, 195, 195);
+            padding: 0px 10px;
+            display: inherit;
+            margin-left: 2%;
+            margin-top: 1%;
+            border-radius: 3px;    
+        }
+        
+        .ayazawithoutborder{
+    
+            display: flex;
+            font-size: 13px;
+            margin-left: 2%;
+            margin-top: 1%;
+        }
+        #ayazclickonsignin{
+            display: flex;
+            font-size: 13px;
+            margin-left: 2%;
+            margin-top: 1%;
+        }
+        .ayazawithborder:hover{
+            color: rgb(0, 219, 219);
+            font-size: 10px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: black;
+            height: 30px;
+            
+            
+        }
+        p{
+            margin: auto;
+            font-size: 15px;
+            
+        }
+        
+        
+        #ayazhome1{
+            background-color: rgb(251, 242, 224);
+           width:inherit;
+            display: grid;
+            grid-template-columns: 47% 53%;
+            grid-template-rows: 575px;
+            margin-top: -9px;
+        }
+        
+        #ayazleftbox{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 480px;
+            height: 420px;
+            margin: 15% 5% 15% 18%;
+            border-radius: 15px;
+            background-color: white;
+            padding-top: 3%;
+        }
+        
+        #ayazrightimage{
+            width: 60%;
+            margin: 25% 27% 10% 5%;
+        }
+        #ayazupperleft{
+            display: flex;
+            background-color: rgb(54, 161, 161);
+            height: 16%;
+            width: 80%;
+            border-radius: 15px;
+            margin: 20px;
+            margin-left: 10%;
+            
+
+        }
+        #ayazuppersubleft{
+            height: 80%;
+            width: 45%;
+            background-color: rgb(255, 255, 255);
+            margin: 2%;
+            border-radius: 10px;
+        }
+        #ayazuppersubright{
+            height: 80%;
+            width: 45%;
+            background-color: rgb(54, 161, 161);
+            margin: 2%;
+
+        }
+        #ayazrentalbold{
+            margin: 2px 0px 0px 10px;
+            text-align: center;
+        }
+        #ayazsubscriptionbold{
+            margin: 2px 0px 0px 10px;
+            text-align: center;
+            color: white;
+        }
+        #ayazrentalimage{
+            margin: 0% 40%;
+        }
+        #ayazcarrentalin{
+            text-align: center;
+            font-size: 17px;
+            color: gray;
+        }
+        #ayazselectcity{
+            height: 50px;
+            width: 334px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border: 1px solid rgb(168, 168, 168);
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #ayazmy3input{
+        
+            margin:  30px 64px 20px 70px;
+        
+        }
+        .ayazmystartend{
+            height: 50px;
+            width: 155px;
+            border: 1px solid rgb(179, 179, 179);
+            padding-left: 10px;
+        }
+        .ayazbolderoption{
+            font-weight: bold;
+        }
+        #ayazsearchbutton{
+            width: 71%;
+            height: 14%;
+            background-image: linear-gradient(to right, rgb(27, 161, 155), rgb(0, 170, 147));
+            margin: auto;
+            border-radius: 30px;
+            
+        }
+        #ayazmysearchtext{
+            color: white;
+            text-align: center;
+            padding-top: 12px;
+        }
+        
+        #ayazmaincontainer{
+            width: 100%;
+            height: 100%;
+            background-color:rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+
+        }
+        #ayazloginform{
+            width: 230px;
+            height: 400px;
+            background-color: white;
+            padding:  10px 40px 40px 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        #ayazcloseicon{
+            height: 15px;
+            width: 15px;
+            border: 1px solid red;
+            margin-left: 95px;
+            cursor: pointer;
+        }
+        #ayazsignupmaincontainer{
+            width: 100%;
+            height: 100%;
+            background-color:rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+
+        }
+        #ayazsignupform{
+            width: 230px;
+            height: 400px;
+            background-color: white;
+            padding:  10px 40px 40px 40px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        #ayazsignupcloseicon{
+            height: 15px;
+            width: 15px;
+            border: 1px solid rgb(207, 207, 207);
+            margin-left: 95px;
+            cursor: pointer;
+        }
+        #ayazbuttonforsignup{
+            cursor: pointer;
+        }
+        
+
+
+
+        #ayazloginenteremail{
+            height: 30px;
+            width: 240px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+            color: rgb(170, 170, 170);
+
+        }
+        #ayazloginenterpassword{
+            height: 30px;
+            width: 240px;
+            margin-top: 40px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+        }
+        .ayazmyloginbutton{
+            border: 0px;
+            padding: 10px 35px;
+            background-color: rgb(0, 184, 184);
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+    
+
+    
+
+
+        #ayazsignupcreateemail{
+            height: 30px;
+            width: 240px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+            color: rgb(170, 170, 170);
+
+
+        }
+        #ayazsignupcreatepassword{
+            height: 30px;
+            width: 240px;
+            margin-top: 40px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+        }
+        #ayazmybuttonforsignup{
+            border: 0px;
+            padding: 10px 35px;
+            background-color: rgb(0, 184, 184);
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="ayaznavbar">
+        <div id="ayazicon">
+            <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="">
+            <p style="margin: 34px 0px 0px -39px; font-size: 12px;">Sanitised. Safe</p>
+        </div>
+        <a class="ayazawithborder" href=""><p class="ayazbolder">Hyundai</p><p>Subscription</p></a>
+        <a class="ayazawithborder" href="mahindra-subscription.html"><p class="ayazbolder">Mahindra</p><p>Subscription</p></a>
+        <a class="ayazawithoutborder" href=""><p class="ayazbolder">FAQs</p></a>
+        <a id="ayazclickonsignin" href=""><img style="width: 20px;" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt=""><p style="margin-right: 60px;">Login or Signup</p></a>
+        <a style="margin-left: 10px;margin-top: 10px;" href="Rental-withoutlogin-byAyaz.html"><button>Log Out</button></a>
+    </div>
+    <div id="ayazhome1">
+        <div>
+            <div  id="ayazleftbox">
+                <div id="ayazupperleft">
+                    <a id="ayazuppersubleft" href="Rental-Logedin-byAyaz.html"><div><h3 id="ayazrentalbold">Rantals</h3><p style="text-align: center;"> For hour & days</p></div></a>
+                    <a id="ayazuppersubright" href="Subscription-Logedin-byAyaz.html"><div><h3 id="ayazsubscriptionbold">Subscription</h3><p style="text-align: center;color: white;">For months & years</p></div></a>
+                </div>
+                <div><img id="ayazrentalimage" src="https://www.revv.co.in/imgs/logo-rentals.svg" alt=""></div>
+                <div><p id="ayazcarrentalin">Self Drive Car Rental In India</p></div>
+                <div id="ayazmy3input">
+                    <select id="ayazselectcity">
+                        <optgroup>
+                            <option class="ayazbolderoption" value="Bangalore">Bangalore</option>
+                            <option class="ayazbolderoption" value="Hyderabad">Hyderabad</option>
+                            <option class="ayazbolderoption" value="Mumbai">Mumbai</option>
+                            <option class="ayazbolderoption" value="Delhi-NCR">Delhi-NCR</option>
+                            <option class="ayazbolderoption" value="Chennai">Chennai</option>
+                            <option class="ayazbolderoption" value="Pune">Pune</option>
+                        </optgroup>
+                
+                        <optgroup>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Bhubaneswar">Bhubaneswar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Mangalore">Mangalore</option>
+                            <option value="Mysore">Mysore</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Surat">surat</option>
+                            <option value="Tirupati">Tirupati</option>
+                            <option value="Trivandrum">Trivandaram</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Vijaywada">Vijaywada</option>
+                            <option value="Vizag">Vizag</option>
+                        </optgroup>
+                    </select>
+                  <div style="display: flex;">
+                    <input style="border-bottom-left-radius: 8px;" class="ayazmystartend" type="datetime-local" placeholder="Start time" >
+                    <input style="border-bottom-right-radius:8px ;" class="ayazmystartend" type="datetime-local" placeholder="end time" name="">
+                  </div>
+                </div>
+                <a href=""><div id="ayazsearchbutton"><h4 id="ayazmysearchtext">Search</h4></div></a>
+            </div>
+        </div>
+        <div>
+            <div id="ayazrightbox">
+                <a href=""> <p></p><img id="ayazrightimage" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_1_FG.webp" alt=""></a>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+<!-- login popup -->
+    <div id="ayazmaincontainer">
+            <div id="ayazloginform" >
+                <div style="display: flex;"><h4 style="margin-left: 90px;">NEW LOGIN</h4><img id="ayazcloseicon" src="https://www.revv.co.in/imgs/cross.png" alt="x"></div>
+                
+                <form class="ayazmylogin" action="">
+                    <input id="ayazloginenteremail" type="text" name="" placeholder="Enter Email">
+                    <input id="ayazloginenterpassword" type="password" placeholder="Enter Password">
+                    
+                    <input class="ayazmyloginbutton" type="submit" title="Login" value="Login">
+                    <div style="font-size: small;" id="ayazbuttonforsignup" >Don't have a account yet ?<p style="color: rgb(0, 175, 175);display: inline;font-weight: bold;"> Sign Up</p></div>
+                    
+                </form>
+                <hr style="margin-left: 10px;">
+            <a href=""></a><div><img style="width: 225px;margin-left: 10px;" src="https://www.revv.co.in/imgs/google-login.png" alt=""></div></a>
+            <a href=""></a><div><img style="width: 225px;margin-left: 10px;" src="https://www.revv.co.in/imgs/facebook-icon.png" alt=""></div></a>
+            </div>
+    
+    </div>
+<!-- signup popup -->
+    <div id="ayazsignupmaincontainer">
+        <div id="ayazsignupform" >
+            <div style="display: flex;"><h4 style="margin-left: 90px;">SIGN UP</h4><img id="ayazsignupcloseicon" src="https://www.revv.co.in/imgs/cross.png" alt="x"></div>
+            
+            <form class="ayazmysignup" action="">
+                <input id="ayazsignupcreateemail" type="text" name="" placeholder="Create Email">
+                <input id="ayazsignupcreatepassword" type="password" placeholder="Create Password">
+                <input type="submit" title="Login" value="Signup">
+                
+            </form>
+            <hr>
+            <a href=""></a><div><img style="width: 225px;" src="https://www.revv.co.in/imgs/google-login.png" alt=""></div></a>
+            <a href=""></a><div><img style="width: 225px;" src="https://www.revv.co.in/imgs/facebook-icon.png" alt=""></div></a>
+        </div>
+    
+    
+</body>
+</html>
+<script>
+document.querySelector("#ayazclickonsignin").addEventListener('click',function(event){
+    event.preventDefault()
+    document.querySelector("#ayazmaincontainer").style.display="flex"
+})
+
+document.querySelector("#ayazcloseicon").addEventListener('click',function(event){
+    event.preventDefault()
+    document.querySelector("#ayazmaincontainer").style.display="none"
+})
+
+document.querySelector("#ayazbuttonforsignup").addEventListener('click',function(event){
+    event.preventDefault()
+    document.querySelector("#ayazsignupmaincontainer").style.display="flex"
+})
+
+document.querySelector("#ayazsignupcloseicon").addEventListener('click',function(event){
+    event.preventDefault()
+    document.querySelector("#ayazsignupmaincontainer").style.display="none"
+    document.querySelector("#ayazmaincontainer").style.display="none"
+
+})
+// for signup
+document.querySelector(".ayazmysignup").addEventListener('submit',forsignup)
+var userstack=JSON.parse(localStorage.getItem("userdatabase")) ||[]
+function forsignup(event){
+    event.preventDefault()
+
+    var signemail=document.querySelector("#ayazsignupcreateemail").value
+    var signpassword=document.querySelector("#ayazsignupcreatepassword").value
+
+    var userdata={
+        signinemail: signemail,
+        signinpassword: signpassword
+    }
+    userstack.push(userdata)
+
+    localStorage.setItem("userdatabase",JSON.stringify(userstack))
+    alert("Sign up Successful")
+    document.querySelector("#ayazsignupmaincontainer").style.display="none"
+}
+
+//for login
+document.querySelector(".ayazmylogin").addEventListener('submit',forlogin)
+
+var reguser=JSON.parse(localStorage.getItem("userdatabase"))
+
+document.querySelector("#ayazclickonsignin").textContent=JSON.parse(localStorage.getItem("nameofmyuser"))
+document.querySelector("#ayazclickonsignin").style.fontSize="20px"
+
+function forlogin(event){
+    event.preventDefault()
+    
+
+
+    var loginemail=document.querySelector("#ayazloginenteremail").value
+    var loginpassword=document.querySelector("#ayazloginenterpassword").value
+
+    var final=false
+    for(var i=0; i<reguser.length; i++)
+    {
+        
+        if(reguser[i].signinemail==loginemail && reguser[i].signinpassword==loginpassword)
+        {
+            final=true;
+            var nameofmyuser=reguser[i].signinemail
+        }
+    }
+    if(final==true)
+        {
+            alert("login Successful")
+            document.querySelector("#ayazsignupmaincontainer").style.display="none"
+            document.querySelector("#ayazmaincontainer").style.display="none"
+            document.querySelector("#ayazclickonsignin").textContent="Welcome"+" "+nameofmyuser;
+            document.querySelector("#ayazclickonsignin").style.marginTop="20px"
+            document.querySelector("#ayazclickonsignin").style.fontSize="15px"
+            localStorage.setItem("nameofmyuser",JSON.stringify("hey"+" "+nameofmyuser))
+            window.location.href="Rental-Logedin-byAyaz.html"
+        }
+        else{
+            alert("Wrong Email or Password")
+
+        }
+}
+
+ 
+</script>
