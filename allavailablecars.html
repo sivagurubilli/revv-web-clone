@@ -25,7 +25,7 @@
     <!--nav bar right side-->
     <div id ="right">
         <a id ="navh3" href="howitworks.html">How it works</a>
-           <a id ="navh3" href="faqs.html">FAQ'S</a>
+           <a id ="navh3" href="faq_page.html">FAQ'S</a>
         
             <img id ="smallogo" src ="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg">
            <a id ="navlh3" href= "logsup.html">Login or Signup</a>
@@ -54,43 +54,202 @@
    <div id ="searchtxt">Search
    </div>
    <input  id ="searchbox" type="search" placeholder="Search by car model">
-<hr>
+
 <div id ="searchbox1">
 <h4>Price Range</h4>
-
 <div id ="pricerange">
-    <form>
+<div id ="minrange">
+    <select id ="minprice" onchange ="selectminprice()">
+    <option value="10500">10,500</option>
+    <option value="11500">11,500</option>
+    <option value="12500">12,500</option>
+    <option value="13500">13,500</option>
+    <option value="14500">14,500</option>
+    <option value="15500">15,500</option>
+    </select>
+    <hr class="hrminprice">
+</div>
 
-    </form>
+<div id ="maxrange">
+    
+    <select id ="maxprice" onchange ="selectmaxprice()">
+        <option value="13500">13,500</option>
+        <option value="14500">14,500</option>
+        <option value="15500">15,500</option>
+        <option value="18500">18,500</option>
+        <option value="20500">20,500</option>
+        <option value="22500">22,500</option>
+        </select>
+        <hr class="hrminprice">
+        
+    </div>
 </div>
 </div>
+
+<div>
+
+<select id ="cartype" onchange ="cartype()">
+    <option value ="">Select cartype</option>
+<option value ="hatchback">Hatchback</option>
+<option value="sedan">Sedan</option>
+<option value ="suv">Suv</option>
+<option value="muv">Muv</option>
+</select>
+<hr>
 </div>
+        <div>
+<select id ="fuel_type" onchange ="fuel_type()">
+    <option value ="">Select fuel_type</option>
+<option value ="petrol">Petrol</option>
+<option value="diesel">Diesel</option>
+</select>
+<hr>
+</div>
+<div>
+    <select id ="brand" onchange ="selectbrand()">
+        <option value ="">Select brand</option>
+    <option value ="hyundai">Hyundai</option>
+    <option value="mahindra">Mahindra</option>
+    </select>
+    <hr>
+    </div>
+    
 
-
-
-
-
-
+        </div>
 
 <!--right side main box -->
+<div id ="rightcont">    
+    <div id ="heading">Best Cars Starting From ₹ 10,400/month in your City
+        <select id ="sortprice" onchange="sortprice()">
+        <option value="">Sort by price</option>
+        <option value ="Low">Low to High</option>
+        <option value ="High"> High to Low</option>
+        </select></div>
+        <div id ="availablecarsrightbox">
 
-<div id ="availablecarsrightbox">
-<div id ="heading">Best Cars Starting From ₹ 10,400/month in your City</div>
+        </div></div>
 
- 
-</div></div>
+</div>
+
+<!--social page-->
+
+
+<div class="social-media">
+    <div id="social_container">
+        <div>
+           <div><img src="https://www.revv.co.in/imgs/revvLogo.png" alt=""></div>
+           <div class="social">
+               <div><a href="https://www.facebook.com/revvindia/" class="fa fa-facebook"></a></div>
+               <div><a href="https://twitter.com/revv_india" class="fa fa-twitter"></a></div>
+               <div><a href="https://www.instagram.com/revv_india/" class="fa fa-instagram"></a></div>
+               <div><a href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q" class="fa fa-youtube-play"></a></div>
+               <div><a href="https://www.linkedin.com/company/revv-self-drive-car" class="fa fa-linkedin"></a></div>
+           </div>
+        </div>
+        <div class="contact_color1">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">subscriptions</a></div>
+            <div><a href="#">tariffs</a></div>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">policy</a></div>
+            <div><a href="#">Blog</a></div>
+        </div>
+        <div>
+            <div>
+                <h4 style="font-size: 22px;margin-bottom: 0px;">Have Questions?</h4>
+                <p style="font-size: 16px;">24/7 Customer Support</p>
+             </div>
+            <div class="contact_color">
+                <div><a href="#">Contact us</a></div>
+                <div><p>+91-9250035555 </p></div>
+                <div><a href="#">care@revv.co.in</a></div>
+                
+            </div>
+        </div>
+    </div>
+    <p style="font-size: 10px;"><b>&copy</b> Primemover Mobility Technologies Pvt Ltd. All rights reserved </p>
+</div>
 </body>
 </html>
 
 
 <!--js script file-->
 <script>
+var carsData = JSON.parse(localStorage.getItem('carsData'))||[];
+    displayData(carsData)
+    //for filtring by city//
+function selectcity(){
+         var selected =document.querySelector("#filtercitybox").value;
+         var filteredListbycity= carsData.filter(function(elem){
+             return elem.city ==selected
+         })
+       displayData (filteredListbycity);
+     }
 
-     var carsData = JSON.parse(localStorage.getItem('carsData'))||[];
+     function selectbrand(){
+         var selected =document.querySelector("#brand").value;
+         var filteredListbybrand = carsData.filter(function(elem){
+             return elem.brand ==selected
+         })
+       displayData (filteredListbybrand);
+     }
+     function cartype(){
+         var selected =document.querySelector("#cartype").value;
+         var filteredListbycartype = carsData.filter(function(elem){
+             return elem.cartype ==selected
+         })
+       displayData (filteredListbycartype);
+     }
+     function fuel_type(){
+         var selected =document.querySelector("#fuel_type").value;
+         var filteredListbyfuel_type = carsData.filter(function(elem){
+             return elem.fuel_type ==selected
+         })
+       displayData (filteredListbyfuel_type);
+     }
+function sortprice(){
+    var selected=document.querySelector("#sortprice").value
+    if(selected=="High"){
+        carsData.sort(function(a,b){
+            return Number(b.price_per_month)-Number(a.price_per_month);
+        });
+    }
+    
+    if(selected=="Low"){
+        carsData.sort(function(a,b){
+            return Number(a.price_per_month)-Number(b.price_per_month);
+        });
+    }
+    displayData(carsData)
+}
+function selectminprice(){
+         var selected =document.querySelector("#minprice").value;
+         var filteredListbyprice= carsData.filter(function(elem){
+             return elem.price_per_month >=selected
+         })
+       displayData (filteredListbyprice);
+     }
+     function selectmaxprice(){
+         var selected =document.querySelector("#maxprice").value;
+         var filteredListbymaxprice= carsData.filter(function(elem){
+             return elem.price_per_month <=selected
+         })
+       displayData (filteredListbymaxprice);
+     }
+
+
+
+
+
+
 
 //mapping carsdata//
+
+     
+function displayData(carsData){
+    document.querySelector("#availablecarsrightbox").innerHTML="";
 carsData.map(function(data){
-    var carsData = JSON.parse(localStorage.getItem('carsData'));
+    JSON.parse(localStorage.getItem("carItems"))||[]
    
     var div =document.createElement("div");
     div.setAttribute("id","box");
@@ -98,7 +257,7 @@ carsData.map(function(data){
     image.setAttribute("src",data.image_url);
     var name =document.createElement("name");
 
-    name.textContent=data.name;
+    name.textContent= data.name;
     var fuel_type=document.createElement("p")
     fuel_type.textContent=data.fuel_type;
     var divl1 =document.createElement("div");
@@ -106,6 +265,7 @@ carsData.map(function(data){
     var divl2=document.createElement("div");
     divl2.setAttribute("id","cartype")
     var divl3 = document.createElement("div");
+    divl3.setAttribute("id","pay")
     var cartype=document.createElement("p")
     cartype.textContent=data.cartype
     
@@ -116,19 +276,31 @@ carsData.map(function(data){
     p2.style.textDecoration="line-through"
     divl2.append(cartype,fuel_type)
     divl1.append(p1,p2);
-div.append(image,name,divl2,divl1);
+    var btn = document.createElement("button")
+  btn.textContent= "Subsribe"
+  btn.addEventListener("click",function(){
+    gotopay(data);
+  });
+  var a = document.createElement('a');
+      var linkText = document.createTextNode("Pay");
+      a.appendChild(linkText);
+      a.title = "Pay";
+      a.href = "pay.html";
+    divl3.append(btn,a)
+
+  div.append(image,name,divl2,divl1,divl3);
    
     document.querySelector("#availablecarsrightbox").append(div);
 });
 
+var carArr =[]
+function gotopay(data){
+    carArr.push(data)
+    localStorage.setItem("carItems",JSON.stringify(carArr));
+}
 
-function selectcity(){
-         var selected =document.querySelector("#filtercitybox").value;
-         var filteredList = carsData.filter(function(elem){
-             return elem.city ==selected
-         })
-         document.querySelector("#availablecarsrightbox").append(filteredList);
-     }
+}
+
 
 
 

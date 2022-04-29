@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+   
+</head>
+<style>
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+       /* border: 1px solid r;*/
+
+margin-top: -10px;
+ background-color:#FFFFFF;
+    }
+    #left{
+        display: flex;
+        width:40%;
+       
+        margin-left:5%;
+       cursor: pointer;
+    }
+    #navimg{
+        vertical-align: middle;
+        margin-top: 5px;
+        height: 50px;
+        /*border: 1px solid red;*/
+        width: 80px;
+    }
+    /*navlogo style*/
+    #right{
+        display:flex;
+       
+        margin-right: 30px;
+        width: 30%;
+
+       
+       
+    }
+   #left>.hyund{
+           margin-left: 10px;
+           display: flex;
+           color: #1A1A1A;
+   }
+   #vline{
+       width: 2px;
+       height: 40px;
+       background-color: grey;
+       margin-left: 27px;
+       margin-top: 8px;
+   }
+   /*vertical line*/
+  
+   .san_safe{
+       margin-top:40px;
+       margin-left: -30px;
+   }
+   /*nav hyund sub img*/
+   .hyundimg{
+       margin-left: 5%;
+       margin-top: 20px;
+    width: 85%;
+    height: 20px;
+
+   }
+   #navh3:hover,#navlh3:hover,#smalllogo:hover{
+       color:#1caba2
+   }
+   /*navbar rigtht text*/
+   #navh3{
+    text-decoration: none;
+       color: #3C4043;
+       margin: 18px 20px 0;
+       text-align: left;
+       cursor: pointer;
+       font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+       
+   }
+   
+   #navlh3{
+       margin-right: 10px;
+       margin-top: 18px;
+       color: #3C4043;
+       text-decoration: none;
+       font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+       cursor: pointer;
+   }
+   /*small logo signup*/
+   #smalllogo{
+       margin-right: 10px;
+       margin-top: -50px;
+      cursor: pointer;
+       width: 20px;
+   }
+   
+  /* above part navbarstyling*/
+
+
+#container{
+   margin-top: 80px;
+   margin-left: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   /*border: 1px solid #ff0000;*/
+width: 800px;
+
+}
+#box {
+  width: 250px;
+  height: 300px;
+ 
+
+  /*border: 1px solid red;*/
+  text-align: center;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+a{
+  font-size: 22px;
+ margin-top: -10px;
+  text-decoration: none;
+  cursor: pointer;
+  color:blue;
+}
+#pay{
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+img {
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+}
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+name {
+  
+  font-size: 20px;
+  font-weight: 400;
+}
+#cartype {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#leftbox{
+margin-left: 20px;
+margin-top: 80px;
+border: 1px solid grey;
+height: 1000px;
+width: 400px;
+padding-left: 20px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media only screen and (max-width:770px){
+  #leftbox{
+width:200px ;
+  }
+  #box {
+  width: 150px;
+  height: 300px;
+  }
+}
+#body{
+display: flex;
+}
+#dur{
+
+  width: 90%;
+  height: 100px;
+  margin: 0 6% 0 0;
+  border: none;
+  outline: none;
+  color: #868686;
+  font-weight: 700;
+font-size: 16px;
+}
+#disc{
+   font-size: 22px;
+   margin-top: 100px;
+   color: black;
+}
+span{
+color:green
+}
+#h3span{
+   color: grey;
+}
+#payform{
+   height: 200px;
+  /* border: 1px solid red;*/
+   width: 100%;
+   margin-top: 20px;
+   margin-left: 50px;
+   
+}
+#name,#ph_no,#textarea,#card_no,#cvv{
+   margin-top: 30px;
+   padding-top: 20px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+   width: 200px;
+}
+#submit{
+   margin-top: 30px;
+   width: 120px;
+   height: 40px;
+   background-color: yellow;
+}
+.disch2{
+  margin: 100px;
+  color:royalblue;
+}
+.payh3{
+  color:blueviolet;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+h2{
+  color:green;
+}
+#h31{
+  color: blue;
+}
+
+
+
+/*social media*/
+.fa {
+        padding: 5px;
+        font-size: 25px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        margin: 30px 2px;
+        }
+        .fa-facebook {
+        background: rgb(14,186,186);
+        color: white;
+        }
+        .fa-twitter {
+        background: rgb(14,186,186);
+        color: white;
+        }
+        .fa-youtube-play {
+        background: rgb(14,186,186);
+        color: white;
+        }
+
+        .fa-instagram {
+        background: rgb(14,186,186);
+        color: white;
+        }
+        .fa-linkedin {
+        background: rgb(14,186,186);
+        color: white;
+        }
+        .social{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #social_container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 20px;
+            justify-content: space-around;
+        }
+        .social-media{
+            background-color: rgb(74,78,90);
+            padding-bottom: 10px;
+            color: white;
+            padding-left: 10%;
+            padding-top: 20px;
+    
+        }
+        .contact_color1 a{
+            color: white;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .contact_color{
+            color: turquoise;
+            font-size: 1.5rem;
+            line-height: 10px;
+        }
+        .contact_color a{
+            color: turquoise;
+        }
+        @media only screen and (max-width:770px){
+            #social_container{
+            display: grid;
+            grid-template-columns:1fr;
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 20px;
+            justify-content: space-around;
+        } 
+        .social{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .social-media{
+            background-color: rgb(74,78,90);
+            padding-bottom: 10px;
+            color: white;
+            padding-left: 2%;
+            padding-top: 2%;
+    
+        }
+        }
+</style>
+
+
+</head>
+<body>
+  <!--navbar-->
+  <div id = "nav">
+    <!--nav left side-->
+<div id ="left">
+    <div ><img id ="navimg" src ="https://www.revv.co.in/grapheneImages/newopen/logo.svg">
+   </div>
+   <p class="san_safe">Sanitised.safe</p>
+   <div id ="vline">
+   </div>
+    <div><img class ="hyundimg" src ="https://www.revv.co.in/grapheneImages/hyundai/mahindra-logo-sub@2x.png">
+</div>
+</div>
+<!--right part of navbar-->
+<div id ="right">
+    <a id ="navh3" href="howitworks.html">How it works</a>
+       <a id ="navh3" href="faq_page.html">FAQS</a>
+    
+        <img id ="smalllogo" src ="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg">
+       <a id ="navlh3" href= "logsup.html">Login or Signup</a>
+
+</div>
+</div>
+
+<div>
+
+   <div id ="body">
+
+    
+      <div id ="leftbox">
+         <div id ="duration">
+    
+            <select id ="dur" onchange ="selectduration()">
+               <option value="">Select_duration</option>
+                <option value="1">1 month</option>
+                <option value="2">2 months</option>
+                <option value="3">3 months</option>
+                <option value="6">6 months</option>
+                <option value="12">1 year</option>
+                
+                </select>
+                <hr>
+        <h2></h2>
+        <h4></h4>
+<div id ="disc">
+   Discount
+</div>
+<h3 id ="h3span">for 2 months of subscription disc -<span>5%</span></h3>
+<h3 id ="h3span" >for 3 months of subscription disc -<span>10%</span></h3>
+<h3 id ="h3span" >for 4 months of subscription disc -<span>10%</span></h3>
+<h3 id ="h3span">for 6 months of subscription disc -<span>20%</span></h3>
+<h3 id ="h3span">for 12 months of subscription disc -<span>30%</span></h3>
+      </div>
+
+      
+      <h2 class="disch2">
+        Book for longer duration enjoy the REVV exclusive benifits and discouonts for you
+      </h2>
+     
+      </div>
+     
+ <div id ="rightbox">    
+   <div id ="container">
+     
+</div>
+<div id ="payform">
+
+  <h3 class="payh3">Pay with your digital payments card and get your subscribed car at your doorstep within 1 hour</h3>
+  <h3 id="h31"></h3>
+  <form>
+      <input id ="name" type ="text" placeholder="enter_your_name">
+      <br/>
+      <input id ="ph_no" type ="number" placeholder="phone no">
+      <br/>
+      <textarea
+      id ="textarea"
+      street="";
+      cols="30";
+      rows="8";
+      placeholder="enter your address"></textarea>
+      <br/>
+      
+<input id ="card_no" type="number" placeholder="card_no">
+<br/>
+<input id ="cvv" type ="number" placeholder="enter_cvv_no">
+<br/>
+<input id="submit" type ="submit" value ="submit"/>
+<br/>
+   </form>
+
+
+
+</div>
+</div>
+</div>
+<!--social media page-->
+
+
+<div class="social-media">
+  <div id="social_container">
+      <div>
+         <div><img src="https://www.revv.co.in/imgs/revvLogo.png" alt=""></div>
+         <div class="social">
+             <div><a href="https://www.facebook.com/revvindia/" class="fa fa-facebook"></a></div>
+             <div><a href="https://twitter.com/revv_india" class="fa fa-twitter"></a></div>
+             <div><a href="https://www.instagram.com/revv_india/" class="fa fa-instagram"></a></div>
+             <div><a href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q" class="fa fa-youtube-play"></a></div>
+             <div><a href="https://www.linkedin.com/company/revv-self-drive-car" class="fa fa-linkedin"></a></div>
+         </div>
+      </div>
+      <div class="contact_color1">
+          <div><a href="#">Home</a></div>
+          <div><a href="#">subscriptions</a></div>
+          <div><a href="#">tariffs</a></div>
+          <div><a href="#">FAQ</a></div>
+          <div><a href="#">policy</a></div>
+          <div><a href="#">Blog</a></div>
+      </div>
+      <div>
+          <div>
+              <h4 style="font-size: 22px;margin-bottom: 0px;">Have Questions?</h4>
+              <p style="font-size: 16px;">24/7 Customer Support</p>
+           </div>
+          <div class="contact_color">
+              <div><a href="#">Contact us</a></div>
+              <div><p>+91-9250035555 </p></div>
+              <div><a href="#">care@revv.co.in</a></div>
+              
+          </div>
+      </div>
+  </div>
+  <p style="font-size: 10px;"><b>&copy</b> Primemover Mobility Technologies Pvt Ltd. All rights reserved </p>
+</div>
+
+
+
+</body>
+
+
+</html>
+
+
+<script>
+  var carArr =JSON.parse(localStorage.getItem("carItems"))
+  
+  document.querySelector("#container").innerHTML="";
+carArr.map(function(data){
+   
+    var div =document.createElement("div");
+    div.setAttribute("id","box");
+    var image =document.createElement("img");
+    image.setAttribute("src",data.image_url);
+    var name =document.createElement("name");
+
+    name.textContent= data.name;
+    var fuel_type=document.createElement("p")
+    fuel_type.textContent=data.fuel_type;
+    var divl1 =document.createElement("div");
+    divl1.setAttribute("id","price")
+    var divl2=document.createElement("div");
+    divl2.setAttribute("id","cartype")
+    var divl3 = document.createElement("div");
+    divl3.setAttribute("id","pay")
+    var cartype=document.createElement("p")
+    cartype.textContent=data.cartype
+    
+    var p1 =document.createElement("p")
+    p1.textContent= data.price_per_month;
+    var p2 = document.createElement("p")
+    p2.textContent=data.strikedoffprice;
+    p2.style.textDecoration="line-through"
+    divl2.append(cartype,fuel_type)
+    divl1.append(p1,p2);
+    div.append(image,name,divl2,divl1,divl3);
+   
+   document.querySelector("#container").append(div);
+
+});
+
+var total = carArr.reduce(function(acc,cv){
+        return acc+Number(cv.price_per_month)
+    },0)
+    
+
+
+function selectduration(){
+         var selected =document.querySelector("#dur").value;
+if(selected==1){
+  price= total*1
+  
+}
+else if(selected==2){
+  price= total*1.9
+  discount=5
+}
+else if(selected==3){
+  price= total*2.6
+  discount=10
+}
+else if(selected==6){
+  price= total*5
+  discount=15
+}
+else if(selected==12){
+   price=total*9
+   discount=30
+}
+
+document.querySelector("h2").textContent=`Total amount is ₹ ${price}/ ----you got the discount of ${discount} %`
+document.querySelector("h4").textContent=`**This total price is after discount.-if you choose for 1 month you are not eligible for discount.**`
+ document.querySelector("#h31") .textContent=`pay  ₹ ${price}/--`
+
+}
+
+document.querySelector("form").addEventListener("submit",pay)
+function pay(event){
+  event.preventDefault();
+  var name=document.querySelector("#name").value
+        var ph_no =document.querySelector("#ph_no").value
+        var textarea= document.querySelector("#textarea").value
+       
+        var card_no = document.querySelector("#card_no").value
+        var cvv = document.querySelector("#cvv").value
+       
+       if(ph_no.length==10&&card_no.length==12&&cvv.length==3){
+
+         alert("thanks for revv you will get your car at your door step")
+       }
+       else{
+         alert("please fill with correct details")
+       }
+
+}
+</script>

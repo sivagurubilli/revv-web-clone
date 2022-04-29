@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Car Subscription in India</title>
+    <title>Car Rental In India</title>
     <style>
-       *{
-        text-decoration: none;
-       }
-
-       a{
+        a{
            color: black;
            text-decoration: none;
        }
-
+        
         #ayaznavbar{
             width: 100%;
             height: 60px;
@@ -28,7 +24,7 @@
         #ayazicon{
             display: flex;
             margin-left: 0%;
-            width: 12%;
+            width: 32%;
             margin:1px 0px;
             padding: 0px 10px 0px 30px;
         }
@@ -42,18 +38,17 @@
             border: 1px solid rgb(195, 195, 195);
             padding: 0px 10px;
             display: inherit;
-            margin-left: 2.5%;
+            margin-left: 2%;
             margin-top: 1%;
-            border-radius: 3px;
-            text-decoration: none;color: black;height: 30px;
-            
-            
+            border-radius: 3px;   
+            text-decoration: none;color: black;height: 30px; 
         }
+        
         .ayazawithoutborder{
     
             display: flex;
             font-size: 13px;
-            margin-left: 2.5%;
+            margin-left: 2%;
             margin-top: 1%;
             text-decoration: none;color: black;height: 30px;
         }
@@ -65,14 +60,11 @@
             text-decoration: none;color: black;height: 30px;
         }
         .ayazawithborder:hover{
-            color: rgb(0, 219, 219);
+            color:rgb(0, 219, 219);
             font-size: 10px;
         }
         
-        
-            
-            
-        
+       
         p{
             margin: auto;
             font-size: 15px;
@@ -81,7 +73,7 @@
         
         
         #ayazhome1{
-            background-color: rgb(213, 235, 233);
+            background-color: rgb(251, 242, 224);
            width:inherit;
             display: grid;
             grid-template-columns: 47% 53%;
@@ -94,7 +86,7 @@
             width: 480px;
             height: 420px;
             margin: 15% 5% 15% 18%;
-            border-radius: 5px;
+            border-radius: 15px;
             background-color: white;
             padding-top: 3%;
         }
@@ -105,11 +97,11 @@
         }
         #ayazupperleft{
             display: flex;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(54, 161, 161);
             height: 16%;
             width: 80%;
             border-radius: 15px;
-            margin: 10px 20px 20px 20px;
+            margin: 20px;
             margin-left: 10%;
             
 
@@ -120,18 +112,13 @@
             background-color: rgb(255, 255, 255);
             margin: 2%;
             border-radius: 10px;
-            padding: 5px;
-            border-radius: 10px;
-            border: 1px solid gray;
             text-decoration: none;
         }
         #ayazuppersubright{
             height: 80%;
             width: 45%;
-            background-image: linear-gradient(to right, rgb(3, 137, 155), rgb(0, 197, 171));
+            background-color: rgb(54, 161, 161);
             margin: 2%;
-            padding: 5px;
-            border-radius: 10px;
             text-decoration: none;
 
         }
@@ -144,80 +131,55 @@
             text-align: center;
             color: white;
         }
-        #ayazsubscriptionimage{
-            margin: 3% 30% 0% 30%;
-            width: 200px;
+        #ayazrentalimage{
+            margin: 0% 40%;
         }
-        #ayazcarsubscriptionin{
+        #ayazcarrentalin{
             text-align: center;
-            font-size: 22px;
+            font-size: 17px;
             color: gray;
         }
-       
-       
+        #ayazselectcity{
+            height: 50px;
+            width: 334px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border: 1px solid rgb(168, 168, 168);
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #ayazmy3input{
         
+            margin:  30px 64px 20px 70px;
+        
+        }
+        .ayazmystartend{
+            height: 50px;
+            width: 155px;
+            border: 1px solid rgb(179, 179, 179);
+            padding-left: 10px;
+        }
         .ayazbolderoption{
             font-weight: bold;
         }
-        #ayazselectcity{
-            height: 60px;
-            width: 300px;
-            font-size: 20px;
-            font-weight: bold;
-            border: 0px;
-            border-bottom: 1px solid gray;
-            margin-bottom: 35px;
-            margin-top: -20px;
+        #ayazsearchbutton{
+            width: 71%;
+            height: 14%;
+            background-image: linear-gradient(to right, rgb(38, 139, 134), rgb(25, 149, 133));
+            margin: auto;
+            border-radius: 30px;
+            text-decoration:none;
+            
         }
-       #ayazmysearchdiv{
-           margin:25px 0px 0px 65px;
-       }
-       #ayazbottomsearchcontainer{
-           display: grid;
-           grid-template-columns: 47% 47%;
-           grid-template-rows: 100%;
-           justify-content: space-between;
-           height: 100px;
-           width: 400px;
-           margin: auto;
-       }
-       #ayazbottomleftnew{
-           border-radius: 4px;
-           
-           display: grid;
-           grid-template-columns: 90% 10%;
-           grid-template-rows: 65% 35%;
-           grid-template-areas:
-           "myuppergradiant myarrawwhite"
-           "mylowerwhite mylowerwhite" ;
-           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-           
-       }
-       #ayazbottomrightnew{
-        border-radius: 4px;
-        display: grid;
-        grid-template-columns: 90% 10%;
-        grid-template-rows: 65% 35%;
-        grid-template-areas:
-        "myuppergradiant myarrawwhite"
-        "mylowerwhite mylowerwhite";
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-           
-       }
-       #ayazmyuppergradiant{
-        background-image: linear-gradient(to right, rgb(3, 140, 158), rgb(0, 197, 171));
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        text-decoration: none;
-       }
-       
-       #ayazmyarrawwhite{
-        background-image: linear-gradient(to right, rgb(0, 197, 171),rgb(0, 197, 171) );
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-       }
-
-       #ayazmaincontainer{
+        #ayazmysearchtext{
+            color: white;
+            text-align: center;
+            padding-top: 12px;
+            text-decoration: none;
+        }
+        
+        #ayazmaincontainer{
             width: 100%;
             height: 100%;
             background-color:rgba(0, 0, 0, 0.5);
@@ -229,9 +191,6 @@
             display: none;
 
         }
-        ::-webkit-scrollbar {
-    display: none;
-    }
         #ayazloginform{
             width: 230px;
             height: 400px;
@@ -270,7 +229,7 @@
         #ayazsignupcloseicon{
             height: 15px;
             width: 15px;
-            border: 1px solid rgb(221, 221, 221);
+            border: 1px solid rgb(219, 219, 219);
             margin-left: 95px;
             cursor: pointer;
         }
@@ -281,12 +240,13 @@
 
 
 
+
         #ayazloginenteremail{
             height: 30px;
             width: 240px;
             border: 0px;
             border-bottom: 1px solid rgb(212, 212, 212);
-            color: rgb(170, 170, 170);
+            color: rgb(51, 50, 50);
 
         }
         #ayazloginenterpassword{
@@ -305,7 +265,6 @@
             margin-bottom: 15px;
             border-radius: 5px;
         }
-    
 
     
 
@@ -315,7 +274,7 @@
             width: 240px;
             border: 0px;
             border-bottom: 1px solid rgb(212, 212, 212);
-            color: rgb(170, 170, 170);
+            color: rgb(39, 39, 39);
 
 
         }
@@ -335,8 +294,6 @@
             margin-bottom: 15px;
             border-radius: 5px;
         }
-        
-
 
         *{
     
@@ -377,37 +334,7 @@
     color:rgb(168,181,203);
     margin-left: 100px;
     
-
 }
-
-
-@media only screen and (min-width:321px) and (max-width:770px) {
-            #ayazhome1{
-               background-color:rgb(29, 175, 175);
-            }
-            #ayazleftbox{
-                background-color: rgb(29, 175, 175);
-                
-            }
-            #ayazrightimage{
-                opacity: 0;
-            }
-            
-        }
-        @media only screen and (min-width:0px) and (max-width:320px) {
-            #ayazhome1{
-               background-color:rgb(29, 175, 175);
-              
-            }
-            #ayazleftbox{
-                background-color: rgb(29, 175, 175);
-                
-            }
-            #ayazrightimage{
-                opacity: 0;
-            }
-            
-        }
 spam{
     /* border: 1px solid blue; */
 position:absolute;
@@ -444,7 +371,7 @@ spam:nth-child(2){
 section{
     /* border: 1px solid blue; */
     width: 85%;
-    height: 350px;
+    height: 300px;
     margin:10px auto;
     display:flex;
     justify-content: left;
@@ -542,7 +469,33 @@ margin-bottom: -5px;
 hr{
     border: -15px  ;
 }
-
+@media only screen and (min-width:321px) and (max-width:770px) {
+            #ayazhome1{
+               background-color:rgb(29, 175, 175);
+            }
+            #ayazleftbox{
+                background-color: rgb(29, 175, 175);
+                
+            }
+            #ayazrightimage{
+                opacity: 0;
+            }
+            
+        }
+        @media only screen and (min-width:0px) and (max-width:320px) {
+            #ayazhome1{
+               background-color:rgb(29, 175, 175);
+              
+            }
+            #ayazleftbox{
+                background-color: rgb(29, 175, 175);
+                
+            }
+            #ayazrightimage{
+                opacity: 0;
+            }
+            
+        }
 /* FAQ box css */
 #faq{
     font-size: 10px;
@@ -719,6 +672,9 @@ height: 100px;
    border-radius: 2px;
    margin-bottom: -10px;
 }
+::-webkit-scrollbar {
+    display: none;
+    }
 
 
 
@@ -726,6 +682,8 @@ height: 100px;
 .scp:hover{
     color:white
 }
+
+        
         
     </style>
 </head>
@@ -736,121 +694,106 @@ height: 100px;
             <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="">
             <p style="margin: 34px 0px 0px -39px; font-size: 12px;">Sanitised. Safe</p>
         </div>
-        <a class="ayazawithborder" href="hyundaicarssubdetails.html"><p class="bolder">Hyundai</p><p>Subscription</p></a>
+        <a class="ayazawithborder" href="hyundaicarssubdetails.html"><p class="ayazbolder">Hyundai</p><p>Subscription</p></a>
         <a class="ayazawithborder" href="mahindra-subscription.html"><p class="ayazbolder">Mahindra</p><p>Subscription</p></a>
-        <a class="ayazawithoutborder" href=""><p>How it works</p></a>
-        <a class="ayazawithoutborder" href=""><p>Subscribe vs Buy</p></a>
         <a class="ayazawithoutborder" href="faq_page.html"><p class="ayazbolder">FAQs</p></a>
-        <a id="ayazclickonsignin" href=""><img style="width: 20px;margin-left: 10px;" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt=""><p style="margin-right: 60px;">Login or Signup</p></a>
-        <a style="margin-left: 10px;margin-top: 10px;" href="Subscription-withoutlogin-byAyaz.html"><button>Log Out</button></a>
+        <a id="ayazclickonsignin" href=""><img style="width: 20px;" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt=""><p style="margin-right: 60px;">Login or Signup</p></a>
     </div>
     <div id="ayazhome1">
         <div>
             <div  id="ayazleftbox">
                 <div id="ayazupperleft">
-                    <a id="ayazuppersubleft" href="Rental-Logedin-byAyaz.html"><div><h3 id="ayazrentalbold">Rantals</h3><p style="text-align: center;"> For hour & days</p></div></a>
-                    <a id="ayazuppersubright" href="Subscription-Logedin-byAyaz.html"><div><h3 id="ayazsubscriptionbold">Subscription</h3><p style="text-align: center;color: white;">For months & years</p></div></a>
+                    <a id="ayazuppersubleft" href="index.html"><div><h3 id="ayazrentalbold">Rantals</h3><p style="text-align: center;"> For hour & days</p></div></a>
+                    <a id="ayazuppersubright" href="Subscription-withoutlogin-byAyaz.html"><div><h3 id="ayazsubscriptionbold">Subscription</h3><p style="text-align: center;color: white;">For months & years</p></div></a>
                 </div>
-                <div><img id="ayazsubscriptionimage" src="https://www.revv.co.in/grapheneImages/newopen/logo_subscription.png" alt=""></div>
-                <div><p id="ayazcarsubscriptionin">Car Subscription In India</p></div>
-                <div id="ayazmysearchdiv" style="display: flex;">
-                    <img style="margin-right: 6px;margin-top: -50px;" src="https://www.revv.co.in/grapheneImages/newopen/location.svg" alt="">
+                <div><img id="ayazrentalimage" src="https://www.revv.co.in/imgs/logo-rentals.svg" alt=""></div>
+                <div><p id="ayazcarrentalin">Self Drive Car Rental In India</p></div>
+                <div id="ayazmy3input">
                     <select id="ayazselectcity">
-                    <optgroup>
-                        <option class="ayazbolderoption" value="Bangalore">Bangalore</option>
-                        <option class="ayazbolderoption" value="Hyderabad">Hyderabad</option>
-                        <option class="ayazbolderoption" value="Mumbai">Mumbai</option>
-                        <option class="ayazbolderoption" value="Delhi-NCR">Delhi-NCR</option>
-                        <option class="ayazbolderoption" value="Chennai">Chennai</option>
-                        <option class="ayazbolderoption" value="Pune">Pune</option>
-                    </optgroup>
-            
-                    <optgroup>
-                        <option value="Kolkata">Kolkata</option>
-                        <option value="Ahmedabad">Ahmedabad</option>
-                        <option value="Bhubaneswar">Bhubaneswar</option>
-                        <option value="Chandigarh">Chandigarh</option>
-                        <option value="Coimbatore">Coimbatore</option>
-                        <option value="Jaipur">Jaipur</option>
-                        <option value="Kochi">Kochi</option>
-                        <option value="Mangalore">Mangalore</option>
-                        <option value="Mysore">Mysore</option>
-                        <option value="Nagpur">Nagpur</option>
-                        <option value="Surat">surat</option>
-                        <option value="Tirupati">Tirupati</option>
-                        <option value="Trivandrum">Trivandaram</option>
-                        <option value="Vadodara">Vadodara</option>
-                        <option value="Vijaywada">Vijaywada</option>
-                        <option value="Vizag">Vizag</option>
-                    </optgroup>
-                </select></div>
-                <div id="ayazbottomsearchcontainer">
-                <a href="allavailablecars.html"><div id="ayazbottomleftnew">
-                        <div id="ayazmyuppergradiant"><h3 style="color: white;margin:5px 0px 5px 10px ;">Search <br> by the month</h3></div>
-                        <div id="ayazmyarrawwhite"> <img style="margin-top: 22px;" src="https://www.revv.co.in/grapheneImages/newopen/right-arrow.svg" alt=""></div>
-                        <div id="ayazmylowerwhite"><p style="margin: 7px;">For 1,3 & 6 months</p></div>
-                    </div>
-                </a>
-                    <a href="allavailablecars.html"><div id="ayazbottomrightnew">
-                        <div id="ayazmyuppergradiant"><h3 style="color: white;margin:5px 0px 5px 10px ;">Search <br> by the year</h3></div>
-                        <div id="ayazmyarrawwhite"> <img style="margin-top: 22px;" src="https://www.revv.co.in/grapheneImages/newopen/right-arrow.svg" alt=""></div>
-                        <div id="ayazmylowerwhite"><p style="margin: 7px;">For 1,3 & 6 months</p></div>
-                    </div>
-                </a>
+                        <optgroup>
+                            <option class="ayazbolderoption" value="Bangalore">Bangalore</option>
+                            <option class="ayazbolderoption" value="Hyderabad">Hyderabad</option>
+                            <option class="ayazbolderoption" value="Mumbai">Mumbai</option>
+                            <option class="ayazbolderoption" value="Delhi-NCR">Delhi-NCR</option>
+                            <option class="ayazbolderoption" value="Chennai">Chennai</option>
+                            <option class="ayazbolderoption" value="Pune">Pune</option>
+                        </optgroup>
+                
+                        <optgroup>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Bhubaneswar">Bhubaneswar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Mangalore">Mangalore</option>
+                            <option value="Mysore">Mysore</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Surat">surat</option>
+                            <option value="Tirupati">Tirupati</option>
+                            <option value="Trivandrum">Trivandaram</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Vijaywada">Vijaywada</option>
+                            <option value="Vizag">Vizag</option>
+                        </optgroup>
+                    </select>
+                  <div style="display: flex;">
+                    <input style="border-bottom-left-radius: 8px;" class="ayazmystartend" type="datetime-local" placeholder="Start time" >
+                    <input style="border-bottom-right-radius:8px ;" class="ayazmystartend" type="datetime-local" placeholder="end time" name="">
+                  </div>
                 </div>
-
+                <a href="allavailablecars.html"><div id="ayazsearchbutton"><h4 id="ayazmysearchtext">Search</h4></div></a>
             </div>
-            
         </div>
         <div>
             <div id="ayazrightbox">
-                <a href=""> <p></p><img id="ayazrightimage" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/LT_Desktop_1_FG.webp" alt=""></a>
+                <a id="" href=""> <p></p><img id="ayazrightimage" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_1_FG.webp" alt=""></a>
             </div>
             
         </div>
         
     </div>
-<!-- login popup -->
-
+    
+<!-- loginpopup -->
     <div id="ayazmaincontainer">
-        <div id="ayazloginform" >
-            <div style="display: flex;"><h4 style="margin-left: 90px;">NEW LOGIN</h4><img id="ayazcloseicon" src="https://www.revv.co.in/imgs/cross.png" alt="x"></div>
-            
-            <form class="ayazmylogin" action="">
-                <input id="ayazloginenteremail" type="text" name="" placeholder="Enter Email">
-                <input id="ayazloginenterpassword" type="password" placeholder="Enter Password">
-                <input class="ayazmyloginbutton" type="submit" title="Login" value="Login">
-                <div style="font-size: small;" id="ayazbuttonforsignup" >Don't have a account yet ?<p style="color: rgb(0, 175, 175);display: inline;font-weight: bold;"> Sign Up</p></div>
+            <div id="ayazloginform" >
+                <div style="display: flex;"><h4 style="margin-left: 90px;">LOGIN</h4><img id="ayazcloseicon" src="https://www.revv.co.in/imgs/cross.png" alt="x"></div>
                 
-            </form>
-            <hr style="margin-left: 10px;">
+                <form class="ayazmylogin" action="">
+                    <input id="ayazloginenteremail" type="text" name="" placeholder="Enter Email">
+                    <input id="ayazloginenterpassword" type="password" placeholder="Enter Password">
+                    
+                    <input class="ayazmyloginbutton" type="submit" title="Login" value="Login">
+                    <div style="font-size: small;" id="ayazbuttonforsignup" >Don't have a account yet ?<p style="color: rgb(0, 175, 175);display: inline;font-weight: bold;"> Sign Up</p></div>
+                    
+                </form>
+                <hr style="margin-left: 10px;">
             <a href=""></a><div><img style="width: 225px;margin-left: 10px;" src="https://www.revv.co.in/imgs/google-login.png" alt=""></div></a>
             <a href=""></a><div><img style="width: 225px;margin-left: 10px;" src="https://www.revv.co.in/imgs/facebook-icon.png" alt=""></div></a>
-        </div>
-
-</div>
+            </div>
+    
+    </div>
 <!-- signup popup -->
-
-<div id="ayazsignupmaincontainer">
-    <div id="ayazsignupform" >
-        <div style="display: flex;"><h4 style="margin-left: 90px;">SIGN UP</h4><img id="ayazsignupcloseicon" src="https://www.revv.co.in/imgs/cross.png" alt="x"></div>
-        
-        <form class="ayazmysignup" action="">
-            <input id="ayazsignupcreateemail" type="text" name="" placeholder="Create Email">
-            <input id="ayazsignupcreatepassword" type="password" placeholder="Create Password">
-            <input class="ayazmyloginbutton" type="submit" title="Login" value="Signup">
-        </form>
-        <hr>
+    <div id="ayazsignupmaincontainer">
+        <div id="ayazsignupform" >
+            <div style="display: flex;"><h4 style="margin-left: 90px;">SIGN UP</h4><img id="ayazsignupcloseicon" src="https://www.revv.co.in/imgs/cross.png" alt="x"></div>
+            
+            <form class="ayazmysignup" action="">
+                <input id="ayazsignupcreateemail" type="text" name="" placeholder="Create Email">
+                <input id="ayazsignupcreatepassword" type="password" placeholder="Create Password">
+                <input id="ayazmybuttonforsignup" type="submit" title="Login" value="Signup">
+                
+            </form>
+            <hr>
             <a href=""></a><div><img style="width: 225px;" src="https://www.revv.co.in/imgs/google-login.png" alt=""></div></a>
             <a href=""></a><div><img style="width: 225px;" src="https://www.revv.co.in/imgs/facebook-icon.png" alt=""></div></a>
+        </div>
+    
     </div>
-
-</div>
-
-
-</div>
-  <!-- Feature Slider code -->
-  <main style=" margin-top: 100px;">
+    
+    <!-- Feature Slider code -->
+<main style=" margin-top: 100px;">
     <h1 class="mynewh1">Feature</h1>
    
      <spam>&#139;</spam>    <!--Used for "<"icone -->
@@ -1161,10 +1104,6 @@ height: 100px;
 <div style="margin:70px"></div>
 <div>
     
-</body>
-</html>
-
-
 
 </body>
 </html>
@@ -1210,17 +1149,16 @@ function forsignup(event){
     document.querySelector("#ayazsignupmaincontainer").style.display="none"
 }
 
-//for login
+//for login//
 document.querySelector(".ayazmylogin").addEventListener('submit',forlogin)
 
 var reguser=JSON.parse(localStorage.getItem("userdatabase"))
 
-document.querySelector("#ayazclickonsignin").textContent=JSON.parse(localStorage.getItem("nameofmyuser"))
-document.querySelector("#ayazclickonsignin").style.fontSize="20px"
+
 
 function forlogin(event){
     event.preventDefault()
-    document.querySelector("#ayazclickonsignin").textContent=JSON.parse(localStorage.getItem("nameofmyuser"))
+    document.querySelector("#ayazrightbox").textContent=JSON.parse(localStorage.getItem("nameofmyuser"))
 
 
     var loginemail=document.querySelector("#ayazloginenteremail").value
@@ -1241,11 +1179,11 @@ function forlogin(event){
             alert("login Successful")
             document.querySelector("#ayazsignupmaincontainer").style.display="none"
             document.querySelector("#ayazmaincontainer").style.display="none"
-            document.querySelector("#ayazclickonsignin").innerHTML="Welcome"+" "+nameofmyuser;
+            document.querySelector("#ayazclickonsignin").textContent="Welcome"+" "+nameofmyuser;
             document.querySelector("#ayazclickonsignin").style.marginTop="20px"
             document.querySelector("#ayazclickonsignin").style.fontSize="15px"
             localStorage.setItem("nameofmyuser",JSON.stringify("welcome"+" "+nameofmyuser))
-            window.location.href="Subscription-Logedin-byAyaz.html"
+            window.location.href="Rental-Logedin-byAyaz.html"
         }
         else{
             alert("Wrong Email or Password")
@@ -1253,5 +1191,6 @@ function forlogin(event){
         }
         
 }
+
  
 </script>
