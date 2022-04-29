@@ -37,14 +37,24 @@ This entire journey of making the project was awesome. We have learned lots of t
 <div align="center">
  
   <div style="display: flex;justify-content:space-between">
-   <div> <img src="https://github.com/sivagurubilli/my-portfoliobuilding/blob/master/src/revv%20self%20driveimg.png?raw=true" style="vertical-align: top;" /> 
-    <img src="https://user-images.githubusercontent.com/91541289/146790572-44d3aedf-62e3-442f-865e-ae5ee06c4293.png" />
+   <div> <img src="https://github.com/sivagurubilli/my-portfoliobuilding/blob/master/src/Screenshot%20(149).png?raw=true" style="vertical-align: top;" /> 
   </div>
     
    </div>
 </div>
 <br>
+
+- ## <span style="color:blue"> Mahindra subscription page </span>
+<div align="center">
+ 
+  <div style="display: flex;justify-content:space-between">
+   <div> <img src="https://github.com/sivagurubilli/my-portfoliobuilding/blob/master/src/revv%20self%20driveimg.png?raw=true" style="vertical-align: top;" /> 
+  </div>
+    
+   </div>
+</div>
 <br>
+
  
 
 
@@ -66,18 +76,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue">Trip Booking-Select City </span>
- <div align="center">
- 
-  <div style="display: flex;">
-   <div> <img width="500" src="https://user-images.githubusercontent.com/91541289/141655244-ba41281a-fc77-4549-b960-30acb7f9f921.png" style="vertical-align: top;" /> 
-    
-  </div>
-    
-   </div>
-</div>
 
-<br>
 
 
 
@@ -85,7 +84,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  
 
 
-- ## <span style="color:blue">  All avilable cars based on ciy </span>
+- ## <span style="color:blue">  All avilable cars based on city </span>
  <div align="center">
  
   <div style="display: flex;">
@@ -100,7 +99,7 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 
 
-- ## <span style="color:blue">  All avilable cars based on ciy </span>
+- ## <span style="color:blue">  Booking car details </span>
  <div align="center">
  
   <div style="display: flex;">
