@@ -81,28 +81,11 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 
 
-- ## <span style="color:blue"> Car Booking Page</span>
- <div align="center">
- 
-  <div style="display: flex;">
-   <div> <img width="450" src="https://user-images.githubusercontent.com/91541289/146790595-8723b759-1445-484c-8dee-a2076857b946.png" style="vertical-align: top;" /> 
-    <img width="450" src="https://user-images.githubusercontent.com/91541289/146790593-4c7de262-4633-4e75-983e-5516cbedaea6.png" />
-    
-     
-  </div>
-    
-   </div>
-</div>
 
-
-
-
-<br>
-<br>
  
 
 
-- ## <span style="color:blue"> Selected Car Details </span>
+- ## <span style="color:blue">  All avilable cars based on ciy </span>
  <div align="center">
  
   <div style="display: flex;">
@@ -112,14 +95,21 @@ This entire journey of making the project was awesome. We have learned lots of t
     
    </div>
 </div>
-
-
-
-
-<br>
 <br>
  
 
+
+
+- ## <span style="color:blue">  All avilable cars based on ciy </span>
+ <div align="center">
+ 
+  <div style="display: flex;">
+   <div> <img width="500" src="https://github.com/sivagurubilli/my-portfoliobuilding/blob/master/src/Screenshot%20(148).png?raw=true" style="vertical-align: top;" /> 
+    
+  </div>
+    
+   </div>
+</div>
 
 
 
