@@ -88,7 +88,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="500" src="https://github.com/sivagurubilli/my-portfoliobuilding/blob/master/src/Screenshot%20(147).png?raw=true" style="vertical-align: top;" /> 
+   <div> <img width="500" src="https://github.com/sivagurubilli/my-portfoliobuilding/blob/master/src/Screenshot%20(150).png?raw=true" style="vertical-align: top;" /> 
     
   </div>
     
@@ -103,7 +103,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <div align="center">
  
   <div style="display: flex;">
-   <div> <img width="500" src="https://github.com/sivagurubilli/my-portfoliobuilding/blob/master/src/Screenshot%20(148).png?raw=true" style="vertical-align: top;" /> 
+   <div> <img width="500" src="https://github.com/sivagurubilli/my-portfoliobuilding/blob/master/src/Screenshot%20(151).png?raw=true" style="vertical-align: top;" /> 
     
   </div>
     
