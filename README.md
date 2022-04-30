@@ -120,10 +120,10 @@ This entire journey of making the project was awesome. We have learned lots of t
 </br>
 
 ## Team members :-
-## Ayaz Ahmed
-## Shiva gurubilli
-## Tejaswini sanjay kengre
-## swapnil parchake
+## 1)Ayaz Ahmed
+## 2)Shiva gurubilli
+## 3)Tejaswini sanjay kengre
+## 4)swapnil parchake
 
  </br>
 
