@@ -117,14 +117,15 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 
 
-<br>
-## Team members
+</br>
+
+## Team members :-
 ## Ayaz Ahmed
 ## Shiva gurubilli
 ## Tejaswini sanjay kengre
 ## swapnil parchake
 
- <br>
+ </br>
 
 # <span style="color:red">Challenges: </span>
 We have faced few challenges while working on project we dealt with them , sometime it take lots of time but on the other hand we got some learning from that. some of the challenges are-<br>
